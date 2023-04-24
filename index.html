@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,20 +9,123 @@
   <body>
     <main>
       <header>
-        <nav class="nav1">
-          <a class="botaonNav" href="#"><button>INÍCIO</button> </a>
-          <a class="botaonNav" href="#"><button>CURSOS</button></a>
-          <a class="botaonNav" href="#"><button>DOCENTES</button></a>
-          <a class="botaonNav" href="#"><button>DOCUMENTOS</button></a>
-          <a class="botaonNav" href="#"><button>PROJETOS</button></a>
-          <a class="botaonNav" href="#"><button>HORÁRIOS</button></a>
+        <div class="conteiner">
+          <h1>
+            <a href=""> <img src="logos/logo-ifrn.svg" alt="" /></a>
+          </h1>
+          <p>
+            Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do
+            Norte
+          </p>
 
-          <div id="divBusca">
-            <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <button id="btnBusca">BUSCAR</button>
-          </div>
-        </nav>
+          <ul class="social">
+            <li>
+              <a
+                href="https://www.instagram.com/ifrnoficial/"
+                class="social-button instagram"
+              >
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/ifrnoficial_"
+                class="social-button twitter"
+              >
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://pt-br.facebook.com/ifrnoficial/"
+                class="social-button facebook"
+              >
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://br.linkedin.com/school/ifrn/"
+                class="social-button linkedin"
+              >
+                <span class="sr-only">Linkedin</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/ifrnoficial"
+                class="social-button youtube"
+              >
+                <span class="sr-only">Youtube</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="actions">
+            <li>
+              <button
+                id="altocontraste"
+                type="button"
+                class="action-button flex-item flex-basis-auto highContrast"
+                title="Alto Contraste"
+              >
+                <span class="sr-only">Alto Contraste</span>
+                <span class="material-icons" aria-hidden="true">contrast</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="action-button flex-item flex-basis-auto darkMode"
+                title="Modo Escuro"
+              >
+                <span class="sr-only">Modo Escuro</span>
+                <span class="material-icons" aria-hidden="true">dark_mode</span>
+              </button>
+            </li>
+            <li>
+              <form
+                id="busca"
+                method="get"
+                action="/search/"
+                class="flex-item flex-basis-auto searchbar"
+              >
+                <input
+                  type="search"
+                  name="query"
+                  placeholder="Busca"
+                  aria-label="Busca"
+                  value=""
+                />
+                <span class="material-icons" aria-hidden="true">search</span>
+              </form>
+            </li>
+          </ul>
+        </div>
       </header>
+      <nav class="nav1">
+        <a class="botaonNav" href="#"><button>CURSOS</button></a>
+        <a class="botaonNav" href="#"><button>DOCENTES</button></a>
+        <a class="botaonNav" href="#"><button>DOCUMENTOS</button></a>
+        <a class="botaonNav" href="#"><button>PROJETOS</button></a>
+        <a class="botaonNav" href="#"><button>HORÁRIOS</button></a>
+      </nav>
+
+      <footer>
+        <p class="tituloFooter">
+          Copyright © 2023 | Instituto Federal de Educação, Ciência e Tecnologia
+          do Rio Grande do Norte
+        </p>
+        <p class="tituloFooter">
+          Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do
+          Norte - Reitoria
+        </p>
+        <p class="tituloFooter">
+          Endereço: Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol. CEP: 59015-300
+        </p>
+        <p>E-mail: comunicacao.reitoria@ifrn.edu.br</p>
+        <p>Telefone: (84) 4005-0890</p>
+      </footer>
     </main>
   </body>
 </html>
