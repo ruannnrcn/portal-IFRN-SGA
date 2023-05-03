@@ -1,13 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>html da home page</h1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>IFRN - São Gonçalo do Amarante</title>
+  </head>
+  <body>
+    <!-- logo do ifrn -->
+    <img class="logo-ifrn" src="logo-ifrn.svg" alt="" />
+
+    <!-- balão de pesquisa -->
+    <form
+      id="busca"
+      method="get"
+      action="/search/"
+      class="flex-item flex-basis-auto searchbar"
+    >
+      <input
+        type="search"
+        name="query"
+        placeholder="Busca"
+        aria-label="Busca"
+        value=""
+      />
+      <span class="material-icons" aria-hidden="true">search</span>
+
+      <!-- barra de navegação -->
+    </form>
+    <nav class="navBar">
+      <a class="buttonNav" href="index.html"><button>CURSO</button></a>
+      <a class="buttonNav" href="Docentes/doscentes.html"
+        ><button>DOCENTES</button></a
+      >
+      <a class="buttonNav" href="Documentos/documentos.html"
+        ><button>DOCUMENTOS</button></a
+      >
+      <a class="buttonNav" href="Projetos/projetos.html"
+        ><button>PROJETOS</button></a
+      >
+      <a class="buttonNav" href="Eventos/eventos.html"
+        ><button>EVENTOS</button></a
+      >
+
+      <a class="buttonNav" href="Discentes/discentes.html"
+        ><button>DISCENTES</button></a
+      >
+    </nav>
+
+    <main>
+      <!-- carrossel de imagens. feito com bootstrap -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- indicadores -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- imagens -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img_1.jpg" alt="Imagem 1" />
+          </div>
+
+          <div class="item">
+            <img src="img_2.jpg" alt="Imagem 2" />
+          </div>
+
+          <div class="item">
+            <img src="img_3.png" alt="Imagem 3" />
+          </div>
+        </div>
+
+        <!-- controles -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+
+      <!-- descrição do curso -->
+      <div class="description">
+        <p class="hat">Curso: Técnico Integrado</p>
+        <h1>Informática</h1>
+        <p class="paragraph">
+          O Curso Técnico Integrado em Informática forma profissionais que
+          desenvolvem programas de computador, seguindo as especificações e
+          paradigmas da lógica de programação e das linguagens de programação;
+          utilizam ambientes de desenvolvimentos de sistemas, sistemas
+          operacionais e banco de dados; realizam testes de software, mantendo
+          registro que possibilitem análises e refinamento dos resultados;
+          executam manutenção de programas de computadores implantados.
+          Possibilidades de atuação: Instituições públicas, privadas e do
+          terceiro setor que demandem sistemas computacionais, especialmente
+          envolvendo programação de computadores.
+        </p>
+
+        <h4>Perfil do Egresso</h4>
+        <p class="paragraphEgresso">
+          O profissional formado neste curso deverá demonstrar habilidades em
+          atividades como:
+        </p>
+        <p class="paragraph">
+          Desenvolver programas de computador, seguindo as especificações e
+          paradigmas da lógica de programação e das linguagens de programação;
+          Realizar testes de programas de computador, mantendo registros que
+          possibilitem análises e refinamento dos resultados; Executar
+          manutenção de programas de computador implantados; Compreender o
+          funcionamento e relacionamento entre os componentes de computadores e
+          seus periféricos; Instalar e configurar computadores, isolados ou em
+          redes, periféricos e softwares; Utilizar os serviços e funções de
+          sistemas operacionais; Utilizar softwares aplicativos e utilitários;
+          Selecionar programas de aplicação a partir da avaliação das
+          necessidades do usuário; Identificar meios físicos, dispositivos e
+          padrões de comunicação, analisando as suas aplicações em redes;
+          Descrever componentes e sua função no processo de funcionamento de uma
+          rede de computadores; Compreender as arquiteturas de redes; Instalar
+          os dispositivos de rede, os meios físicos e software de controle
+          desses dispositivos, analisando seu funcionamento para aplicações em
+          redes; Instalar e configurar sistemas operacionais de redes de
+          computadores; Instalar e configurar protocolos e softwares de redes;
+          Desenvolver serviços de administração de redes locais; Conhecer e
+          desenvolver processos básicos de documentação de projetos de
+          estruturas físicas de redes locais; Interpretar documentação de
+          projetos físicos de redes locais; Aplicar conceitos de algoritmo e
+          orientação a objetos; Aplicar técnicas de análise e projeto de
+          sistemas orientados a objetos; Compreender o funcionamento das
+          estruturas de dados básicas; Aplicar boas técnicas de programação;
+          Conhecer o processo de desenvolvimento de software; Entender os
+          conceitos de projeto e utilização de banco de dados; Aplicar técnicas
+          básicas de manutenção de microcomputadores; Aplicar normas técnicas na
+          instalação de microcomputadores; Promover e difundir práticas técnicas
+          de correta utilização de microcomputadores; Conhecer e avaliar modelos
+          de organização de empresas; Organizar a coleta e documentação de
+          informações sobre o desenvolvimento de projetos de softwares; Avaliar
+          a necessidade de treinamento e de suporte técnico aos usuários;
+          Executar ações de treinamento e de suporte técnico.
+        </p>
+      </div>
+    </main>
+
+    <!-- informações complementares do curso (barra lateral direita) -->
+    <aside>
+      <details>
+        <summary>Ficha Técnica</summary>
+        <dl class="details-list">
+          <div class="list-item">
+            <dt>
+              <span class="material-icons" aria-hidden="true">shedule</span>
+              "Carga Horária:"
+            </dt>
+            <dd>4040h</dd>
+          </div>
+
+          <div class="list-item">
+            <dt>
+              <span class="material-icons" aria-hidden="true">date_range</span>
+              "Duração:"
+            </dt>
+            <dd>Quatro Anos</dd>
+          </div>
+          <div class="list-item">
+            <dt>
+              <span class="material-icons" aria-hidden="true">info</span>
+              "Tipo de Ensino:"
+            </dt>
+            <dd>Presencial</dd>
+          </div>
+
+          <div class="list-item">
+            <dt>
+              <span class="material-icons" aria-hidden="true">login</span>
+              "Forma de Ingresso:"
+            </dt>
+            <dd>Processo Seletivo</dd>
+          </div>
+
+          <div class="list-item">
+            <dt>
+              <span class="material-icons" aria-hidden="true">domain</span>
+              "Ofertado em:"
+            </dt>
+            <dd>
+              <p class="campus">Apodi</p>
+              <p class="campus">Caicó</p>
+              <p class="campus">Currais Novos</p>
+              <p class="campus">Ipanguaçu</p>
+              <p class="campus">Ceará-Mirim</p>
+              <p class="campus">João Câmara</p>
+              <p class="campus">Lajes</p>
+              <p class="campus">Macau</p>
+              <p class="campus">Mossoró</p>
+              <p class="campus">Natal - Central</p>
+              <p class="campus">Natal - Zona Norte</p>
+              <p class="campus">Nova Cruz</p>
+              <p class="campus">Parnamirim</p>
+              <p class="campus">Pau dos Ferros</p>
+              <p class="campus">São Gonçalo do Amarante</p>
+              <p class="campus">São Paulo do Potengi</p>
+            </dd>
+          </div>
+        </dl>
+      </details>
+    </aside>
+    <!-- rodapé do site -->
+    <footer>
+      <p class="paragraph_TitleFooter">
+        Copyright © 2023 | Instituto Federal de Educação, Ciência e Tecnologia
+        do Rio Grande do Norte
+      </p>
+      <p class="paragraph_titleFooter">Campus São Gonçalo do Amarante</p>
+      <p class="paragraph_titleFooter">
+        Rua Prof. Carlos Guedes Alcoforado, s/n, Centro. CEP: 59291-727
+      </p>
+      <p class="paragraph_titleFooter">
+        E-mail: comunicacao.reitoria@ifrn.edu.br
+      </p>
+      <p class="paragraph_titleFooter">Telefone: (84) 4005-4111</p>
+    </footer>
+  </body>
 </html>
