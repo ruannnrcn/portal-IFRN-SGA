@@ -1,1 +1,43 @@
-/* página de estilo geral */
+:root {
+  --cor-base: #fff;
+  --verde: #2f9e41;
+  --verde-texto: #027a00;
+  --cinza: #c0c0c0;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0px;
+}
+
+.material-icons {
+  font-family: "material-icons";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header #logo-e-nome {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10%;
+  padding: 18px 0px 24.5px 0px;
+}
+
+header #logo-e-nome p {
+  width: 30%;
+}
+header #primeira-linha {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+header #barra-pesquisa {
+  margin-top: 1.5%;
+}
