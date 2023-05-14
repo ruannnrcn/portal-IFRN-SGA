@@ -12,9 +12,12 @@
 }
 
 .material-icons {
-  font-family: "material-icons";
+  font-family: "Material Icons";
 }
-
+body {
+  display: block;
+  margin: auto;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -40,4 +43,35 @@ header #primeira-linha {
 
 header #barra-pesquisa {
   margin-top: 1.5%;
+}
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.5%;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.description-paragraph {
+  width: 60%;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+  margin: auto;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  margin-top: 10%;
 }
