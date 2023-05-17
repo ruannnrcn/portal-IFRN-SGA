@@ -10,6 +10,7 @@
   margin: 0;
   outline: 0 none;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 .material-icons {
@@ -67,21 +68,21 @@ main {
 .details {
   margin-left: 2%;
   margin-top: 5%;
-  margin-left: 2.5%; 
+  margin-left: 2.5%;
   clear: both;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem var(--gap);
   justify-content: space-between;
 }
-.campus{
+.campus {
   margin: -1%;
   font-size: 1.25rem;
   line-height: 1em;
   padding: 0.35rem 0.75rem;
   border-radius: 25px;
 }
-.campus-content{
+.campus-content {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
