@@ -20,60 +20,40 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="HomePage/style.css" />
     <title>IFRN - São Gonçalo do Amarante</title>
   </head>
   <header>
     <!-- logo do ifrn -->
-    <div id="primeira-linha">
-      <div id="logo-e-nome">
-        <img class="logo-ifrn" src="logo-ifrn.svg" alt="" />
+    <img class="logo-ifrn" src="HomePage/logo-ifrn.svg" alt="" />
 
-        <p>
-          Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
-        </p>
-      </div>
+    <!--TITULO DO SITE IFRN-->
+    <p id="Titulo-ifrn">
+      Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
+    </p>
 
-      <div id="barra-pesquisa">
-        <!-- balão de pesquisa -->
-        <form
-          id="busca"
-          method="get"
-          action="/search/"
-          class="flex-item flex-basis-auto searchbar"
-        >
-          <input
-            type="search"
-            name="query"
-            placeholder="Busca"
-            aria-label="Busca"
-            value=""
-          />
-          <span class="material-icons" aria-hidden="true">search</span>
-        </form>
-      </div>
+    <button class="botao-Tema"><a href="">tema</a></button>
 
-      <!-- barra de navegação -->
+    <div id="divBusca">
+      <input type="text" id="txtBusca" placeholder="Buscar..." />
+      <img src="HomePage/lupa.svg" id="btnBusca" alt="Buscar" />
     </div>
-    <nav class="navBar">
-      <a class="buttonNav" href="index.html"><button>CURSO</button></a>
-      <a class="buttonNav" href="Docentes/docentes.html"
-        ><button>DOCENTES</button></a
-      >
-      <a class="buttonNav" href="Dicentes/dicentes.html"
-        ><button>DICENTES</button></a
-      >
-      <a class="buttonNav" href="Documentos/documentos.html"
-        ><button>DOCUMENTOS</button></a
-      >
-      <a class="buttonNav" href="Projetos/projetos.html"
-        ><button>PROJETOS</button></a
-      >
-      <a class="buttonNav" href="Eventos/eventos.html"
-        ><button>EVENTOS</button></a
-      >
-    </nav>
+    <!-- <span class="material-icons" aria-hidden="true">search</span> -->
   </header>
+
+  <!-- barra de navegação -->
+  <nav>
+    <div class="nav-menu">
+      <ul class="menu">
+        <li><a href="">CURSOS</a></li>
+        <li><a href="">DOCENTES</a></li>
+        <li><a href="">DOCUMENTOS</a></li>
+        <li><a href="">PROJETOS</a></li>
+        <li><a href="">EVENTOS</a></li>
+        <li><a href="">DICENTES</a></li>
+      </ul>
+    </div>
+  </nav>
   <body>
     <main>
       <!-- carrossel de imagens. feito com bootstrap -->
