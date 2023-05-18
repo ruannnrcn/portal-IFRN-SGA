@@ -91,7 +91,7 @@ main {
   width: 25em;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
+} 
 footer {
   display: flex;
   flex-direction: column;
