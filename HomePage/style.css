@@ -119,13 +119,45 @@ nav {
 /* Menu do titulo da pagina  fim*/
 
 /* CARROSSEL */
-.carousel {
-  display: block;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 1.5%;
-  height: 300px;
+.carousel-item{
+  height: 32rem;
+  background: #000;
+  color: #fff;
+  position: relative;
+
 }
+
+.container-carrousel{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 5rem;  
+}
+
+.container-carrousel, h1 p {
+  padding: 4rem 2rem;
+}
+
+.overlay-image{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0 ;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  opacity: 0.45;
+}
+
+#myCarousel{
+  margin: 26px 65px;
+
+}
+
+/* CARROSSEL FIM*/
+
 
 .description {
   display: flex;
@@ -185,3 +217,8 @@ footer {
   position: static;
   margin-top: 10%;
 }
+
+header img {
+  width: 25vh;
+}
+
