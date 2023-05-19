@@ -18,7 +18,6 @@
   font-size: larger;
   padding-left: 0.5em;
   display: flex;
-  align-content: ;
 }
 body {
   display: block;
@@ -90,7 +89,7 @@ main {
   display: flex;
   align-content: center;
 }
-dd{
+dd {
   padding-left: 2em;
 }
 .campus {
