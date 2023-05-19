@@ -112,6 +112,14 @@ nav {
 }
 .menu a {
   color: #696969;
+  text-decoration: none;
+}
+.menu a::after {
+  color: #696969;
+}
+.menu a:hover {
+  transition: all 0.3s ease-in-out;
+  color: rgb(0, 255, 0);
 }
 /* Menu do titulo da pagina  fim*/
 
