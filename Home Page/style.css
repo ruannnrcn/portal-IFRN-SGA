@@ -81,13 +81,17 @@ main {
   line-height: 1em;
   padding: 0.35rem 0.75rem;
   border-radius: 25px;
+  background-color: #c0c0c0;
 }
 .campus-content {
   margin: auto;
   display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  width: 25em;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
+} 
 footer {
   display: flex;
   flex-direction: column;
