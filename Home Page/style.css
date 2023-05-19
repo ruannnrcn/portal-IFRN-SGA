@@ -23,38 +23,110 @@ body {
   display: block;
   margin: auto;
 }
+
+/* Flex box do titulo da pagina */
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-header #logo-e-nome {
-  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 1rem 15rem 1rem 15rem;
+  gap: 6rem;
+  border-bottom: 1px rgba(33, 179, 53, 0.082) solid;
+  align-items: center;
   flex-direction: row;
-  justify-content: left;
-  gap: 10%;
-  padding: 18px 0px 24.5px 0px;
+}
+/*Botao de busca*/
+#divBusca {
+  background-color: #ffffff;
+  border: solid 1px;
+  border-radius: 15px;
+  width: 299px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-header #logo-e-nome p {
-  width: 30%;
+/* Botao de Busca  */
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 2fr;
+  border: none;
+  height: 30px;
+  width: 260px;
 }
-header #primeira-linha {
+#btnBusca {
+  margin-top: 5px;
+}
+/* Botao de Busca fim  */
+
+#Titulo-ifrn {
+  color: black;
+  flex-basis: 270px;
+  align-self: end;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 2px;
+}
+.botao-Tema {
+  background-color: #eeeeee29;
+  border-radius: 15px;
+  border: solid 1px #333333bb;
+  color: #000000;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  align-self: center;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.botao-Tema::after {
+  background-color: #bbb;
+}
+.botao-Tema:hover {
+  background: #c5c5c5;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Menu do titulo da pagina */
+nav {
+  box-shadow: 0px 6px 6px 0px #2a690029;
+  padding: 1rem 14rem 0rem 14rem;
+}
+.navBar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.16);
 }
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  color: #000000;
+}
+.menu a {
+  color: #696969;
+}
+/* Menu do titulo da pagina  fim*/
 
-header #barra-pesquisa {
-  margin-top: 1.5%;
-}
+/* CARROSSEL */
 .carousel {
-  display: flex;
+  display: block;
   flex-direction: row;
   justify-content: center;
   margin-top: 1.5%;
+  height: 300px;
 }
+
 .description {
   display: flex;
   flex-direction: row;
@@ -83,17 +155,14 @@ main {
 }
 .row1-details {
   display: flex;
-  align-content: center;
 }
 .row2-details {
   display: flex;
-  align-content: center;
 }
 dd {
   padding-left: 2em;
 }
 .campus {
-  margin: -1%;
   font-size: 1.25rem;
   line-height: 1em;
   padding: 0.35rem 0.75rem;
