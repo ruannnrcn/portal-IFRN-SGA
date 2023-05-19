@@ -15,6 +15,8 @@
 
 .material-icons {
   font-family: "Material Icons";
+  font-size: larger;
+  display: flex;
 }
 body {
   display: block;
@@ -128,6 +130,7 @@ nav {
   display: flex;
   flex-direction: row;
   text-align: justify;
+  padding: 5%;
 }
 
 main {
@@ -135,25 +138,36 @@ main {
   flex-direction: column;
 }
 .description-paragraph {
-  width: 60%;
+  padding: 2.5%;
+  border-left: 5px solid #2f9e41;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
 }
 .details {
+  padding: 2%;
   margin-left: 2%;
-  margin-top: 5%;
   margin-left: 2.5%;
-  clear: both;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem var(--gap);
-  justify-content: space-between;
+  border-left: 5px solid #2f9e41;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
 }
 .campus {
-  margin: -1%;
   font-size: 1.25rem;
   line-height: 1em;
   padding: 0.35rem 0.75rem;
   border-radius: 25px;
-  background-color: #e7e7e75d;
+  background-color: #e0e0e0;
+}
+.row1-details {
+  display: flex;
+}
+.row2-details {
+  display: flex;
+}
+
+dd {
+  padding-left: 2em;
 }
 .campus-content {
   margin: auto;
