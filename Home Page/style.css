@@ -15,6 +15,10 @@
 
 .material-icons {
   font-family: "Material Icons";
+  font-size: larger;
+  padding-left: 0.5em;
+  display: flex;
+  align-content: ;
 }
 body {
   display: block;
@@ -56,6 +60,7 @@ header #barra-pesquisa {
   display: flex;
   flex-direction: row;
   text-align: justify;
+  padding: 5%;
 }
 
 main {
@@ -63,17 +68,30 @@ main {
   flex-direction: column;
 }
 .description-paragraph {
-  width: 60%;
+  padding: 2.5%;
+  border-left: 5px solid #2f9e41;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
 }
 .details {
+  padding: 2%;
   margin-left: 2%;
-  margin-top: 5%;
   margin-left: 2.5%;
-  clear: both;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem var(--gap);
-  justify-content: space-between;
+  border-left: 5px solid #2f9e41;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+.row1-details {
+  display: flex;
+  align-content: center;
+}
+.row2-details {
+  display: flex;
+  align-content: center;
+}
+dd{
+  padding-left: 2em;
 }
 .campus {
   margin: -1%;
@@ -81,9 +99,10 @@ main {
   line-height: 1em;
   padding: 0.35rem 0.75rem;
   border-radius: 25px;
-  background-color: #c0c0c0;
+  background-color: #e0e0e0;
 }
 .campus-content {
+  padding-left: 1%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -91,7 +110,7 @@ main {
   width: 25em;
   flex-wrap: wrap;
   gap: 0.5rem;
-} 
+}
 footer {
   display: flex;
   flex-direction: column;
