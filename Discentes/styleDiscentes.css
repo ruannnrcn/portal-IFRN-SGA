@@ -104,7 +104,6 @@ nav {
   list-style: none;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.16);
 }
-
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -126,108 +125,55 @@ nav {
 }
 /* Menu do titulo da pagina  fim*/
 
-/* CARROSSEL */
-.carousel-item {
-  height: 32rem;
-  background: #000;
-  color: #fff;
-  position: relative;
-}
-
-.container-carrousel {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 5rem;
-}
-
-.container-carrousel,
-h1 p {
-  padding: 4rem 2rem;
-  width: 80vh;
-}
-
-.overlay-image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.45;
-}
-
-#myCarousel {
-  margin: 26px 65px;
-}
-
-.carousel-inner p {
-  font-size: 12px;
-}
-
-/* CARROSSEL FIM*/
-
-.description {
+/* inicio da estilização dos cards*/
+.container-turmas {
   display: flex;
   flex-direction: row;
-  text-align: justify;
-  padding: 5%;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-.description-paragraph {
-  padding: 2.5%;
-  border-left: 5px solid #2f9e41;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
-  border-radius: 10px;
-}
-.details {
-  padding: 2%;
-  margin-left: 2%;
-  margin-left: 2.5%;
-  display: flex;
-  border-left: 5px solid #2f9e41;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
-  border-radius: 10px;
-}
-.row1-details {
-  display: flex;
-}
-.row2-details {
-  display: flex;
-}
-dd {
-  padding-left: 2em;
-}
-.campus {
-  font-size: 1.25rem;
-  line-height: 1em;
-  padding: 0.35rem 0.75rem;
-  border-radius: 25px;
-  background-color: #e0e0e0;
-}
-.campus-content {
-  padding-left: 1%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-  width: 25em;
   flex-wrap: wrap;
-  gap: 0.5rem;
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  position: static;
-  margin-top: 10%;
+  gap: 3rem;
+  padding: 20px 40px;
+  align-items: center;
+  justify-content: center;
 }
 
-header img {
-  width: 25vh;
+.card {
+  width: 40rem;
+  box-shadow: 5px 6px 6px 0px #2a690029;
 }
+
+.card:hover {
+  box-shadow: 5px 6px 25px 2px grey;
+  transition: 0.4s;
+}
+
+.card-text {
+  font-size: 13px;
+  color: #696969;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: #696969;
+}
+
+.card-body a:hover {
+  color: #027a00;
+  transition: 0.4s;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card-img-top {
+  border-radius: 10px;
+}
+
+main h1 {
+  text-align: center;
+  padding: 16px 0px 8px 0px;
+  font-size: 3rem;
+}
+
+/* fim da estilização dos cards */
