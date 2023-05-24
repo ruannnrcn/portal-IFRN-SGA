@@ -185,8 +185,19 @@ main {
   border-left: 5px solid #2f9e41;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
+  font-size: 14px;
+}
+.hat {
+  color: #afaeae;
+}
+.description-paragraph h1 {
+  font-weight: bold;
+  color: #027a00;
+  padding-bottom: 1.2rem;
+  padding-top: 1.4rem;
 }
 .details {
+  font-size: 12px;
   padding: 2%;
   margin-left: 2%;
   margin-left: 2.5%;
@@ -195,21 +206,33 @@ main {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
 }
-summary {
-  margin-bottom: 3%;
+.details ul {
+  font-size: large;
+  margin-bottom: 10%;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
+  color: #027a00;
 }
 .row1-details {
   display: flex;
+  margin-left: -7%;
   justify-content: space-around;
 }
 .row2-details {
   display: flex;
+  justify-content: space-around;
 }
-dd {
-  padding-left: 2em;
+
+.list-duracao {
+  margin-left: -42%;
+}
+.list-4anos {
+  margin-left: -58%;
+}
+
+.list-horas {
+  margin-left: -15%;
 }
 .campus {
   font-size: 1.25rem;
@@ -228,11 +251,19 @@ dd {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-footer {
+
+footer .div-footer {
   display: flex;
-  flex-direction: column;
-  position: static;
-  margin-top: 10%;
+  flex-direction: row;
+  padding: 30px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2f9e41;
+  color: #ffffff;
+}
+
+footer a {
+  padding: 20px;
 }
 
 div.list-header {
@@ -241,14 +272,12 @@ div.list-header {
   align-items: center;
 }
 
-div.list-description{
+div.list-description {
   text-align: center;
 }
 
-
-div.list-item{
+div.list-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-
