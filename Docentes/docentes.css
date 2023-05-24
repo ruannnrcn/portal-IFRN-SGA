@@ -15,6 +15,9 @@
 
 .material-icons {
   font-family: "Material Icons";
+  font-size: larger;
+  padding-left: 0.5em;
+  display: flex;
 }
 body {
   display: block;
@@ -111,13 +114,66 @@ nav {
   color: #000000;
 }
 .menu a {
+  font-size: 12px;
   color: #696969;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #027a00;
+  transition: 0.3s;
 }
 /* Menu do titulo da pagina  fim*/
 
-footer {
+/* inicio da estilização dos cards*/
+.container-turmas {
   display: flex;
-  flex-direction: column;
-  position: static;
-  margin-top: 10%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 20px 40px;
+  align-items: center;
+  justify-content: center;
 }
+
+.card {
+  width: 40rem;
+  box-shadow: 5px 6px 6px 0px #2a690029;
+}
+
+.card:hover {
+  box-shadow: 5px 6px 25px 2px grey;
+  transition: 0.4s;
+}
+
+.card-text {
+  font-size: 13px;
+  color: #696969;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: #696969;
+}
+
+.card-body a:hover {
+  color: #027a00;
+  transition: 0.4s;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card-img-top {
+  border-radius: 10px;
+}
+
+main h1 {
+  text-align: center;
+  padding: 16px 0px 8px 0px;
+  font-size: 3rem;
+}
+
+/* fim da estilização dos cards */
