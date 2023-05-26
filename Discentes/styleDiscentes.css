@@ -131,7 +131,7 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4rem;
-  padding: 20px 40px;
+  padding: 30px 40px;
   align-items: center;
   justify-content: center;
 }
@@ -174,3 +174,39 @@ main h1 {
 }
 
 /* fim da estilização dos cards */
+
+ /* footer */
+
+footer .div-footer {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2f9e41;
+  color: #ffffff;
+}
+
+footer a {
+  padding: 1.5rem;
+}
+
+div.list-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+div.list-description {
+  text-align: center;
+}
+
+div.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.imgs img{
+  width: 2.2rem;
+}

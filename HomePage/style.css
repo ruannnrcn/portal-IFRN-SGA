@@ -252,10 +252,12 @@ main {
   gap: 0.5rem;
 }
 
+/* footer */
+
 footer .div-footer {
   display: flex;
   flex-direction: row;
-  padding: 30px;
+  padding: 20px;
   justify-content: space-around;
   align-items: center;
   background-color: #2f9e41;
@@ -263,7 +265,7 @@ footer .div-footer {
 }
 
 footer a {
-  padding: 20px;
+  padding: 1.5rem;
 }
 
 div.list-header {
@@ -280,4 +282,8 @@ div.list-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.imgs img{
+  width: 2.2rem;
 }
