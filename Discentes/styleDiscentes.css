@@ -131,25 +131,31 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4rem;
-  padding: 30px 40px;
+  padding: 2rem 5rem;
   align-items: center;
   justify-content: center;
 }
 
-.card {
+.card-body .card {
+  width: 35vh;
+  gap: 1.5rem;
   width: 35rem;
-  box-shadow: 5px 6px 6px 0px #2a690029;
+  box-shadow: 2px 4px 10px 2px #2a690029;
   transition: 0.6s;
 }
-
-.card:hover {
-  box-shadow: 5px 2px 20px 2px grey;
+.card-body .card:hover {
+  box-shadow: 2px 5px 20px 2px #696969;
   transition: 0.4s;
 }
 
 .card-text {
   font-size: 13px;
   color: #696969;
+}
+
+main {
+  margin: 30px;
+  box-shadow: 2px 2px 20px 2px #2a690029;
 }
 
 .card-body a {
@@ -167,15 +173,16 @@ nav {
   font-weight: bold;
 }
 
-main h1 {
-  text-align: center;
-  padding: 16px 0px 8px 0px;
+.card-header h1 {
   font-size: 2.5rem;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
 }
 
 /* fim da estilização dos cards */
 
- /* footer */
+/* footer */
 
 footer .div-footer {
   display: flex;
@@ -207,6 +214,6 @@ div.list-item {
   justify-content: flex-end;
 }
 
-.imgs img{
+.imgs img {
   width: 2.2rem;
 }
