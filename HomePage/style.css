@@ -35,30 +35,39 @@ header {
   align-items: center;
   flex-direction: row;
 }
-/*Botao de busca*/
-#divBusca {
-  background-color: #ffffff;
-  border: solid 1px;
-  border-radius: 15px;
-  width: 299px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-top-left-radius: 12px;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
 }
 
-/* Botao de Busca  */
-#txtBusca {
+form.example button {
   float: left;
-  background-color: transparent;
+  width: 20%;
   padding: 10px;
-  font-size: 2fr;
-  border: none;
-  height: 30px;
-  width: 260px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-top-right-radius: 12px;
+  border-left: none;
+  cursor: pointer;
 }
-#btnBusca {
-  margin-top: 5px;
+
+form.example button:hover {
+  background: #0b7dda;
 }
-/* Botao de Busca fim  */
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 #Titulo-ifrn {
   color: black;
@@ -284,6 +293,6 @@ div.list-item {
   justify-content: flex-end;
 }
 
-.imgs img{
+.imgs img {
   width: 2.2rem;
 }
