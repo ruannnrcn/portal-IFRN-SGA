@@ -55,6 +55,15 @@
         <input type="text" placeholder="Pesquisa" name="search2" />
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
+    <div class="bota.busca">
+      <form
+        class="example"
+        action="/action_page.php"
+        style="margin: auto; max-width: 300px"
+      >
+        <input type="text" placeholder="Search.." name="search2" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
     </div>
   </header>
 
@@ -62,7 +71,7 @@
   <nav>
     <div class="nav-menu">
       <ul class="menu">
-        <li><a href="#">CURSOS</a></li>
+        <li><a href="#">SOBRE O CURSO</a></li>
         <li><a href="./Docentes/docentes.html">DOCENTES</a></li>
         <li><a href="./Documentos/documentos.html">DOCUMENTOS</a></li>
         <li><a href="./Projetos/projetos.html">PROJETOS</a></li>
@@ -74,6 +83,7 @@
 
   <body>
     <main>
+      <!-- carrosel começo -->
       <div
         id="myCarousel"
         class="carousel slide carousel-fade"
@@ -88,7 +98,7 @@
           <div class="carousel-item active" data-interval="5000">
             <div
               class="overlay-image"
-              style="background-image: url(./HomePage/imagem-setic-2022.jpeg)"
+              style="background-image: url(./HomePage/imagem-setic2022.jpg)"
             ></div>
             <div class="container-carrousel">
               <h1>SETIC 2022</h1>
@@ -102,30 +112,28 @@
           <div class="carousel-item" data-interval="5000">
             <div
               class="overlay-image"
-              style="background-image: url(./HomePage/img_2.jpg)"
+              style="background-image: url(./HomePage/image-lab-2.jpg)"
             ></div>
             <div class="container-carrousel">
-              <h1>Venha para o IFRN2!!</h1>
+              <h1>Laboratórios Preparados!</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae asperiores magni esse repudiandae vero ea harum,
-                corporis, error possimus distinctio sapiente iure, modi
-                repellendus natus nam non amet nesciunt? Voluptatibus.
+                O curso de informática do campus São Gonçalo do Amarante conta
+                com os mais diversos laboratórios climatizados e otimizados para
+                melhorar ainda mais o seu aprendizado.
               </p>
             </div>
           </div>
           <div class="carousel-item" data-interval="5000">
             <div
               class="overlay-image"
-              style="background-image: url(./HomePage/img_3.png)"
+              style="background-image: url(./HomePage/professores.jpg)"
             ></div>
             <div class="container-carrousel">
-              <h1>Venha para o IFRN3!!</h1>
+              <h1>Professores Capacitados</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae asperiores magni esse repudiandae vero ea harum,
-                corporis, error possimus distinctio sapiente iure, modi
-                repellendus natus nam non amet nesciunt? Voluptatibus.
+                No campus de São Gonçalo do Amarante, mais precisamente na area
+                de informática temos professores extrmamente capacitados nas
+                mais diversas áreas da técnologia da informação.
               </p>
             </div>
           </div>
@@ -151,6 +159,8 @@
         </a>
       </div>
 
+      <!-- carousel final -->
+
       <!-- descrição do curso -->
       <div class="description">
         <div class="description-paragraph">
@@ -169,7 +179,7 @@
             envolvendo programação de computadores.
           </p>
 
-          <h4>Perfil do Egresso</h4>
+          <h1>Perfil do Egresso</h1>
           <p class="paragraphEgresso">
             O profissional formado neste curso deverá demonstrar habilidades em
             atividades como:
@@ -215,7 +225,9 @@
         <!-- informações complementares do curso (barra lateral direita) -->
         <aside class="details">
           <div>
-            <summary>Ficha Técnica</summary>
+            <ul>
+              Ficha Técnica
+            </ul>
             <div class="details-list">
               <div class="row1-details">
                 <div class="list-item">
@@ -225,26 +237,29 @@
                     >
                     Carga Horária:
                   </div>
-                  <div class="list-description"><p>4040h</p></div>
+                  <div class="list-description list-horas"><p>4040h</p></div>
                 </div>
 
                 <div class="list-item">
-                  <div class="list-header">
+                  <div class="list-header list-duracao">
                     <span class="material-icons" aria-hidden="true"
                       >date_range</span
                     >
                     Duração:
                   </div>
-                  <div class="list-description"><p>Quatro Anos</p></div>
+                  <div class="list-description list-4anos">
+                    <p>Quatro Anos</p>
+                  </div>
                 </div>
               </div>
-              <div class="row1-details">
+              <div class="row2-details">
                 <div class="list-item">
                   <div class="list-header">
                     <span class="material-icons" aria-hidden="true">info</span>
                     Tipo de Ensino:
                   </div>
-                  <div>Presencial</div>
+
+                  <div class="list-description"><p>Presencial</p></div>
                 </div>
 
                 <div class="list-item">
@@ -252,15 +267,15 @@
                     <span class="material-icons" aria-hidden="true">login</span>
                     Forma de Ingresso:
                   </div>
-                  <div>Processo Seletivo</div>
+                  <div class="list-description"><p>Processo Seletivo</p></div>
                 </div>
               </div>
               <div class="list-item">
-                <dt>
+                <div class="list-header">
                   <span class="material-icons" aria-hidden="true">domain</span>
                   Ofertado em:
-                </dt>
-                <dd class="campus-content">
+                </div>
+                <div class="campus-content">
                   <a class="campus">Apodi</a>
                   <a class="campus">Caicó</a>
                   <a class="campus">Currais Novos</a>
@@ -277,7 +292,7 @@
                   <a class="campus">Pau dos Ferros</a>
                   <a class="campus">São Gonçalo do Amarante</a>
                   <a class="campus">São Paulo do Potengi</a>
-                </dd>
+                </div>
               </div>
             </div>
           </div>
@@ -327,17 +342,26 @@
   </body>
   <!-- rodapé do site -->
   <footer>
-    <p class="paragraph_TitleFooter">
-      Copyright © 2023 | Instituto Federal de Educação, Ciência e Tecnologia do
-      Rio Grande do Norte
-    </p>
-    <p class="paragraph_titleFooter">Campus São Gonçalo do Amarante</p>
-    <p class="paragraph_titleFooter">
-      Rua Prof. Carlos Guedes Alcoforado, s/n, Centro. CEP: 59291-727
-    </p>
-    <p class="paragraph_titleFooter">
-      E-mail: comunicacao.reitoria@ifrn.edu.br
-    </p>
-    <p class="paragraph_titleFooter">Telefone: (84) 4005-4111</p>
+    <div class="div-footer">
+      <h4 class="h2-footer">
+        Copyright © 2023 | Instituto Federal de Educação, Ciência e Tecnologia
+        do Rio Grande do Norte
+      </h4>
+
+      <div class="imgs">
+        <a class="buttom-img" href=""
+          ><img src="HomePage/icon-instagram 1.svg" alt="icon-instagram"
+        /></a>
+        <a class="buttom-img" href=""
+          ><img src="HomePage/icon-youtube 1.svg" alt="icon-youtube"
+        /></a>
+        <a class="buttom-img" href=""
+          ><img src="HomePage/icon-twitter 1.svg" alt="icon-twitter"
+        /></a>
+        <a class="buttom-img" href=""
+          ><img src="HomePage/icon-facebook 1.svg" alt="icon-facebook"
+        /></a>
+      </div>
+    </div>
   </footer>
 </html>

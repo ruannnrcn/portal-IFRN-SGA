@@ -130,19 +130,20 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3rem;
-  padding: 20px 40px;
+  gap: 4rem;
+  padding: 30px 40px;
   align-items: center;
   justify-content: center;
 }
 
 .card {
-  width: 40rem;
+  width: 35rem;
   box-shadow: 5px 6px 6px 0px #2a690029;
+  transition: 0.6s;
 }
 
 .card:hover {
-  box-shadow: 5px 6px 25px 2px grey;
+  box-shadow: 5px 2px 20px 2px grey;
   transition: 0.4s;
 }
 
@@ -166,14 +167,46 @@ nav {
   font-weight: bold;
 }
 
-.card-img-top {
-  border-radius: 10px;
-}
-
 main h1 {
   text-align: center;
   padding: 16px 0px 8px 0px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 /* fim da estilização dos cards */
+
+ /* footer */
+
+footer .div-footer {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2f9e41;
+  color: #ffffff;
+}
+
+footer a {
+  padding: 1.5rem;
+}
+
+div.list-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+div.list-description {
+  text-align: center;
+}
+
+div.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.imgs img{
+  width: 2.2rem;
+}

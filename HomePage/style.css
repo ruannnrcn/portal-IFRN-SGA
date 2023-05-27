@@ -36,6 +36,7 @@ header {
   flex-direction: row;
 }
 
+<<<<<<< HEAD
 /* botao de pesquisa */
 
 form.example input[type="text"] {
@@ -47,21 +48,42 @@ form.example input[type="text"] {
   float: left;
   width: 80%;
   background: #ffffff;
+=======
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-top-left-radius: 12px;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+>>>>>>> 880bdd5cbf0ec857609eeaa02177949c896a8163
 }
 
 form.example button {
   float: left;
   width: 20%;
+<<<<<<< HEAD
   border-top-right-radius: 21px;
   border-bottom-right-radius: 21px;
   padding: 8px;
   background: #ffffff;
   box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
+=======
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-top-right-radius: 12px;
+  border-left: none;
+>>>>>>> 880bdd5cbf0ec857609eeaa02177949c896a8163
   cursor: pointer;
 }
 
 form.example button:hover {
   background: #0b7dda;
+<<<<<<< HEAD
 }
 
 form.example::after {
@@ -70,6 +92,15 @@ form.example::after {
   display: table;
 }
 /* fim do botao pesquisa */
+=======
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+>>>>>>> 880bdd5cbf0ec857609eeaa02177949c896a8163
 
 #Titulo-ifrn {
   color: black;
@@ -231,8 +262,19 @@ main {
   border-left: 5px solid #2f9e41;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
+  font-size: 14px;
+}
+.hat {
+  color: #afaeae;
+}
+.description-paragraph h1 {
+  font-weight: bold;
+  color: #027a00;
+  padding-bottom: 1.2rem;
+  padding-top: 1.4rem;
 }
 .details {
+  font-size: 12px;
   padding: 2%;
   margin-left: 2%;
   margin-left: 2.5%;
@@ -241,21 +283,33 @@ main {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
 }
-summary {
-  margin-bottom: 3%;
+.details ul {
+  font-size: large;
+  margin-bottom: 10%;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
+  color: #027a00;
 }
 .row1-details {
   display: flex;
+  margin-left: -7%;
   justify-content: space-around;
 }
 .row2-details {
   display: flex;
+  justify-content: space-around;
 }
-dd {
-  padding-left: 2em;
+
+.list-duracao {
+  margin-left: -42%;
+}
+.list-4anos {
+  margin-left: -58%;
+}
+
+.list-horas {
+  margin-left: -15%;
 }
 .campus {
   font-size: 1.25rem;
@@ -274,11 +328,21 @@ dd {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-footer {
+
+/* footer */
+
+footer .div-footer {
   display: flex;
-  flex-direction: column;
-  position: static;
-  margin-top: 10%;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2f9e41;
+  color: #ffffff;
+}
+
+footer a {
+  padding: 1.5rem;
 }
 
 div.list-header {
@@ -296,3 +360,10 @@ div.list-item {
   flex-direction: column;
   justify-content: flex-end;
 }
+<<<<<<< HEAD
+=======
+
+.imgs img {
+  width: 2.2rem;
+}
+>>>>>>> 880bdd5cbf0ec857609eeaa02177949c896a8163
