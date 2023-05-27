@@ -42,12 +42,19 @@
     </p>
 
     <!-- Botao de troca de Dark para Light -->
-    <button class="botao-Tema"><a href="">tema</a></button>
+    <div class="butao-busca">
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider"></span>
+      </label>
+    </div>
 
     <!-- Botao de Busca -->
     <div id="divBusca">
-      <input type="text" id="txtBusca" placeholder="Buscar..." />
-      <i class="fa fa-search"></i>
+      <form class="example" action="/action_page.php">
+        <input type="text" placeholder="Pesquisa" name="search2" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
     </div>
   </header>
 
