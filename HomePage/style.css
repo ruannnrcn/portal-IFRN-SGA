@@ -36,7 +36,6 @@ header {
   flex-direction: row;
 }
 
-<<<<<<< HEAD
 /* botao de pesquisa */
 
 form.example input[type="text"] {
@@ -48,42 +47,21 @@ form.example input[type="text"] {
   float: left;
   width: 80%;
   background: #ffffff;
-=======
-form.example input[type="text"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-top-left-radius: 12px;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
->>>>>>> 880bdd5cbf0ec857609eeaa02177949c896a8163
 }
 
 form.example button {
   float: left;
   width: 20%;
-<<<<<<< HEAD
   border-top-right-radius: 21px;
   border-bottom-right-radius: 21px;
   padding: 8px;
   background: #ffffff;
   box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
-=======
-  padding: 10px;
-  background: #2196f3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-top-right-radius: 12px;
-  border-left: none;
->>>>>>> 880bdd5cbf0ec857609eeaa02177949c896a8163
   cursor: pointer;
 }
 
 form.example button:hover {
   background: #0b7dda;
-<<<<<<< HEAD
 }
 
 form.example::after {
@@ -92,15 +70,6 @@ form.example::after {
   display: table;
 }
 /* fim do botao pesquisa */
-=======
-}
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
->>>>>>> 880bdd5cbf0ec857609eeaa02177949c896a8163
 
 #Titulo-ifrn {
   color: black;
@@ -360,10 +329,3 @@ div.list-item {
   flex-direction: column;
   justify-content: flex-end;
 }
-<<<<<<< HEAD
-=======
-
-.imgs img {
-  width: 2.2rem;
-}
->>>>>>> 880bdd5cbf0ec857609eeaa02177949c896a8163
