@@ -1,0 +1,164 @@
+:root {
+  --cor-base: #fff;
+  --verde: #2f9e41;
+  --verde-texto: #027a00;
+  --cinza: #c0c0c0;
+}
+
+* {
+  border: 0 none;
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: block;
+  margin: auto;
+}
+
+/* Flex box do titulo da pagina */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 1rem 15rem 1rem 15rem;
+  gap: 6rem;
+  border-bottom: 1px rgba(33, 179, 53, 0.082) solid;
+  align-items: center;
+  flex-direction: row;
+}
+/*Botao de busca*/
+#divBusca {
+  background-color: #ffffff;
+  border: solid 1px;
+  border-radius: 15px;
+  width: 299px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Botao de Busca  */
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 2fr;
+  border: none;
+  height: 30px;
+  width: 260px;
+}
+#btnBusca {
+  margin-top: 5px;
+}
+/* Botao de Busca fim  */
+
+#Titulo-ifrn {
+  color: black;
+  flex-basis: 270px;
+  align-self: end;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 2px;
+}
+.botao-Tema {
+  background-color: #eeeeee29;
+  border-radius: 15px;
+  border: solid 1px #333333bb;
+  color: #000000;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  align-self: center;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.botao-Tema::after {
+  background-color: #bbb;
+}
+.botao-Tema:hover {
+  background: #c5c5c5;
+  transition: all 0.4s ease-in-out;
+}
+/* Menu do titulo da pagina */
+nav {
+  box-shadow: 0px 6px 6px 0px #2a690029;
+  padding: 1rem 14rem 0rem 14rem;
+}
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.16);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  color: #000000;
+}
+.menu a {
+  font-size: 12px;
+  color: #696969;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #027a00;
+  transition: 0.3s;
+}
+/* Menu do titulo da pagina  fim*/
+
+footer .div-footer {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2f9e41;
+  color: #ffffff;
+}
+
+footer a {
+  padding: 20px;
+}
+
+div.list-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+div.list-description {
+  text-align: center;
+}
+
+div.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* estilização dos cards */
+
+.card{
+  max-width: 3000em;
+  flex-direction: row;
+  border-radius: 1%;
+  border: #000000;
+  display: flex;
+}
+.card img{
+  max-width: 100%;
+}
+
+
