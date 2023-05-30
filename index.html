@@ -52,11 +52,17 @@
     <!-- Botao de Busca -->
     <div id="divBusca">
       <form class="example" action="/action_page.php">
-        <input type="text" placeholder="Pesquisa" name="search2" />
-        <button type="submit"><i class="fa fa-search"></i></button>
+        <input
+          type="text"
+          id="pesquisa"
+          placeholder="Pesquisa"
+          name="search2"
+        />
+        <button onclick="pesquisar()" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
       </form>
-    <div class="bota.busca">
-
+      <div class="bota.busca"></div>
     </div>
   </header>
 
@@ -315,6 +321,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="HomePage/home_page.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script
