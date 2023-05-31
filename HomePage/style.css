@@ -6,7 +6,7 @@
   --cinza: #c0c0c0;
   --cinza-escuro: #a0a0a0;
   --preto-texto: #000000;
-  --fundo-preto: #141414;
+  --fundo-preto: #000000e0;
 }
 
 * {
@@ -195,7 +195,7 @@ nav {
   gap: 2rem;
   align-items: center;
   list-style: none;
-  box-shadow: 0px 0px 15px 0px rgba(73, 69, 69, 0.16);
+  box-shadow: 0px 0px 15px 0px rgba(255, 0, 0, 0.16);
 }
 
 .menu {
@@ -284,6 +284,7 @@ main {
   border-radius: 10px;
   font-size: 14px;
 }
+
 .dark-mode .description-paragraph {
   color: var(--cinza);
   border-left: 5px solid #ffffff;
@@ -310,6 +311,7 @@ main {
   border-left: 5px solid #2f9e41;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
+  height: 31em;
 }
 .dark-mode .details{
   border-left: 5px solid #ececec;
@@ -380,6 +382,10 @@ footer .div-footer {
   color: #ffffff;
 }
 
+.imgs {
+  display: flex;
+  align-content: center;
+}
 footer a {
   padding: 1.5rem;
 }
