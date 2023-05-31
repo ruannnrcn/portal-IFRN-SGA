@@ -91,7 +91,7 @@ body.dark-mode {
   background-color: #ffffff;
   box-shadow: inset 2px 5px 10px #dbdbdb;
   transition: 0.4s;
-  border-radius: 5px;
+  border-radius: 12px;
 }
 
 .slider:before {

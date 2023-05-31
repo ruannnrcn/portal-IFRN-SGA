@@ -22,6 +22,8 @@ function darkmode() {
   document.body.classList.add("dark-mode"); //add a class to the body tag
   checkbox.checked = true; //set checkbox to be checked state
   sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
+  var image = document.getElementsByClassName("logo-ifrn-dark");
+image.src = "logo-ifrn-light"
 }
 
 //function for checkbox when checkbox is not checked
@@ -30,3 +32,4 @@ function nodark() {
   checkbox.checked = false; //set checkbox to be unchecked state
   sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
 }
+
