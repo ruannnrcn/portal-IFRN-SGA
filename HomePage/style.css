@@ -188,15 +188,6 @@ nav {
 .dark-mode nav {
   box-shadow: 0px 6px 6px 0px #00000029;
 }
-.navBar {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem 1rem;
-  gap: 2rem;
-  align-items: center;
-  list-style: none;
-  box-shadow: 0px 0px 15px 0px rgba(255, 0, 0, 0.16);
-}
 
 .menu {
   display: flex;
@@ -299,7 +290,7 @@ main {
   padding-bottom: 1.2rem;
   padding-top: 1.4rem;
 }
-.dark-mode .description-paragraph h1{
+.dark-mode .description-paragraph h1 {
   color: #ffffff;
 }
 .details {
@@ -313,7 +304,7 @@ main {
   border-radius: 10px;
   height: 31em;
 }
-.dark-mode .details{
+.dark-mode .details {
   border-left: 5px solid #ececec;
 }
 .details ul {
@@ -323,9 +314,8 @@ main {
   text-decoration: none;
   font-weight: bold;
   color: #027a00;
-  
 }
-.dark-mode .details ul{
+.dark-mode .details ul {
   color: #ffffff;
 }
 .row1-details {
@@ -356,8 +346,8 @@ main {
   background-color: #e0e0e0;
   text-decoration: none;
 }
-.dark-mode .campus{
-color: #000;
+.dark-mode .campus {
+  color: #000;
 }
 .campus-content {
   padding-left: 1%;
@@ -397,7 +387,7 @@ div.list-header {
 }
 .dark-mode div.list-header {
   color: #ffffff;
-} 
+}
 
 div.list-description {
   text-align: center;

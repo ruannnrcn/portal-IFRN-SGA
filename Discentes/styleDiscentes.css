@@ -116,6 +116,11 @@ header {
   flex-direction: row;
 }
 
+.dark-mode header {
+  background-color: var(--fundo-preto);
+  transition: 0.7s;
+}
+
 #Titulo-ifrn {
   color: black;
   flex-basis: 270px;
@@ -176,13 +181,16 @@ form.example::after {
 
 /* Menu do titulo da pagina */
 nav {
-  /* box-shadow: 0px 2px 6px 0px #2a690029; */
+  box-shadow: 0px 6px 6px 0px #2a690029;
   padding: 0rem 14rem 0rem 14rem;
   border-top: #00000005 solid 1px;
 }
+
 .dark-mode nav {
-  /* box-shadow: 0px 6px 2px 0px #0026ff29; */
-  background-color: black;
+  background-color: var(--fundo-preto);
+  border-top: #20202051 solid 1px;
+  box-shadow: 0px 6px 6px 0px #00000029;
+  transition: 0.7s;
 }
 
 .menu {
@@ -193,7 +201,9 @@ nav {
   align-items: center;
   list-style: none;
   color: #000000;
+  margin-bottom: 0;
 }
+
 .menu a {
   font-size: 12px;
   color: #696969;
@@ -211,6 +221,7 @@ nav {
 /* Menu do titulo da pagina  fim*/
 
 /* inicio da estilização dos cards*/
+
 .container-turmas {
   display: flex;
   flex-direction: row;
@@ -225,11 +236,22 @@ nav {
   width: 35vh;
   gap: 1.5rem;
   width: 35rem;
-  box-shadow: 2px 4px 10px 2px #2a690029;
+  box-shadow: 0px 0px 7px #2a690029;
   transition: 0.6s;
 }
+
+.dark-mode .card-body .card {
+  box-shadow: 0px 6px 6px 0px #00000074;
+  transition: 0.6s;
+}
+
 .card-body .card:hover {
-  box-shadow: 2px 5px 20px 2px #696969;
+  box-shadow: 2px 5px 20px 2px #3c3c3c;
+  transition: 0.4s;
+}
+
+.dark-mode .card-body .card:hover {
+  box-shadow: 0px 1px 20px 0px #484747;
   transition: 0.4s;
 }
 
@@ -238,13 +260,17 @@ nav {
   color: #696969;
 }
 
-main {
-  /* box-shadow: 2px 2px 20px 2px #2a690029; */
+.dark-mode .card-text {
+  color: var(--cinza-escuro);
 }
 
 .card-body a {
   text-decoration: none;
   color: #696969;
+}
+
+.dark-mode .card-body a {
+  color: var(--cinza-escuro);
 }
 
 .card-body a:hover {
@@ -256,6 +282,10 @@ main {
   font-size: 17px;
   font-weight: bold;
   color: #027a00;
+}
+
+.dark-mode .card-title {
+  color: var(--cinza);
 }
 
 h1 {
@@ -271,11 +301,12 @@ h1 {
 /* Darkmode */
 
 .dark-mode body header,
-.dark-mode body nav,
 .dark-mode .card-body,
 .dark-mode .card-body .card {
   background-color: var(--fundo-preto);
+  transition: 0.7s;
 }
+
 /* footer */
 
 footer .div-footer {
