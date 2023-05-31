@@ -287,9 +287,11 @@ nav {
   transition: 0.3s;
 }
 /* Menu do titulo da pagina  fim*/
-
+div h3{
+  padding-left: 50%;
+}
 /* inicio da estilização dos cards*/
-.container-turmas {
+.card-group {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -317,11 +319,12 @@ nav {
 
 .card-body a {
   text-decoration: none;
-  color: #696969;
+  color: #027a00;
 }
 
 .card-body a:hover {
-  color: #027a00;
+  color: #696969;
+  
   transition: 0.4s;
 }
 
