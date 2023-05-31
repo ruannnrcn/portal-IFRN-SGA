@@ -23,11 +23,6 @@
   padding-left: 0.5em;
   display: flex;
 }
-body {
-  display: block;
-  margin: auto;
-  background-color: #ffffff;
-}
 
 .dark-mode body {
   background-color: var(--fundo-preto);
@@ -181,21 +176,13 @@ form.example::after {
 
 /* Menu do titulo da pagina */
 nav {
-  box-shadow: 0px 6px 6px 0px #2a690029;
+  /* box-shadow: 0px 2px 6px 0px #2a690029; */
   padding: 0rem 14rem 0rem 14rem;
   border-top: #00000005 solid 1px;
 }
 .dark-mode nav {
-  box-shadow: 0px 6px 6px 0px #00000029;
-}
-.navBar {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem 1rem;
-  gap: 2rem;
-  align-items: center;
-  list-style: none;
-  box-shadow: 0px 0px 15px 0px rgba(73, 69, 69, 0.16);
+  /* box-shadow: 0px 6px 2px 0px #0026ff29; */
+  background-color: black;
 }
 
 .menu {
@@ -252,8 +239,7 @@ nav {
 }
 
 main {
-  margin: 30px;
-  box-shadow: 2px 2px 20px 2px #2a690029;
+  /* box-shadow: 2px 2px 20px 2px #2a690029; */
 }
 
 .card-body a {
@@ -282,6 +268,14 @@ h1 {
 
 /* fim da estilização dos cards */
 
+/* Darkmode */
+
+.dark-mode body header,
+.dark-mode body nav,
+.dark-mode .card-body,
+.dark-mode .card-body .card {
+  background-color: var(--fundo-preto);
+}
 /* footer */
 
 footer .div-footer {

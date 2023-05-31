@@ -6,7 +6,7 @@
   --cinza: #c0c0c0;
   --cinza-escuro: #a0a0a0;
   --preto-texto: #000000;
-  --fundo-preto: #141414;
+  --fundo-preto: #000000e0;
 }
 
 * {
@@ -195,7 +195,7 @@ nav {
   gap: 2rem;
   align-items: center;
   list-style: none;
-  box-shadow: 0px 0px 15px 0px rgba(73, 69, 69, 0.16);
+  box-shadow: 0px 0px 15px 0px rgba(255, 0, 0, 0.16);
 }
 
 .menu {
