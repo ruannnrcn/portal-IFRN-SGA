@@ -29,44 +29,55 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="HomePage/home_page.js" />
 
     <title>IFRN - São Gonçalo do Amarante</title>
   </head>
-  <header>
-    <!-- logo do ifrn -->
-    <img class="logo-ifrn" src="HomePage/logo-ifrn.svg" alt="" />
-
-    <!--TITULO DO SITE IFRN-->
-    <p id="Titulo-ifrn">
-      Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
-    </p>
-
-    <!-- Botao de troca de Dark para Light -->
-    <button class="botao-Tema"><a href="">tema</a></button>
-
-    <!-- Botao de Busca -->
-    <div id="divBusca">
-      <input type="text" id="txtBusca" placeholder="Buscar..." />
-      <i class="fa fa-search"></i>
-    </div>
-  </header>
-
-  <!-- barra de navegação -->
-  <nav>
-    <div class="nav-menu">
-      <ul class="menu">
-        <li><a href="#">CURSOS</a></li>
-        <li><a href="./Docentes/docentes.html">DOCENTES</a></li>
-        <li><a href="./Documentos/documentos.html">DOCUMENTOS</a></li>
-        <li><a href="./Projetos/projetos.html">PROJETOS</a></li>
-        <li><a href="./Eventos/eventos.html">EVENTOS</a></li>
-        <li><a href="./Discentes/discentes.html">DISCENTES</a></li>
-      </ul>
-    </div>
-  </nav>
 
   <body>
+    <header>
+      <!-- logo do ifrn -->
+      <img
+        class="logo-ifrn"
+        src="https://portal.ifrn.edu.br/static/images/logo.svg?da3b22901768"
+        alt=""
+      />
+      <p id="Titulo-ifrn">
+        Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
+      </p>
+
+      <!-- Botao de troca de Dark para Light -->
+      <div class="butao-busca">
+        <label class="switch">
+          <input type="checkbox" id="ChangeTheme" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- Botao de Busca -->
+      <div id="divBusca">
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Pesquisa" name="search2" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+
+    <!-- barra de navegação -->
+    <nav>
+      <div class="nav-menu">
+        <ul class="menu">
+          <li><a href="#">SOBRE O CURSO</a></li>
+          <li><a href="./Docentes/docentes.html">DOCENTES</a></li>
+          <li><a href="./Documentos/documentos.html">DOCUMENTOS</a></li>
+          <li><a href="./Projetos/projetos.html">PROJETOS</a></li>
+          <li><a href="./Eventos/eventos.html">EVENTOS</a></li>
+          <li><a href="./Discentes/discentes.html">DISCENTES</a></li>
+        </ul>
+      </div>
+    </nav>
     <main>
+      <!-- carrosel começo -->
       <div
         id="myCarousel"
         class="carousel slide carousel-fade"
@@ -81,7 +92,7 @@
           <div class="carousel-item active" data-interval="5000">
             <div
               class="overlay-image"
-              style="background-image: url(./HomePage/imagem-setic-2022.jpeg)"
+              style="background-image: url(./HomePage/imagem-setic2022.jpg)"
             ></div>
             <div class="container-carrousel">
               <h1>SETIC 2022</h1>
@@ -95,30 +106,28 @@
           <div class="carousel-item" data-interval="5000">
             <div
               class="overlay-image"
-              style="background-image: url(./HomePage/img_2.jpg)"
+              style="background-image: url(./HomePage/image-lab-2.jpg)"
             ></div>
             <div class="container-carrousel">
-              <h1>Venha para o IFRN2!!</h1>
+              <h1>Laboratórios Preparados!</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae asperiores magni esse repudiandae vero ea harum,
-                corporis, error possimus distinctio sapiente iure, modi
-                repellendus natus nam non amet nesciunt? Voluptatibus.
+                O curso de informática do campus São Gonçalo do Amarante conta
+                com os mais diversos laboratórios climatizados e otimizados para
+                melhorar ainda mais o seu aprendizado.
               </p>
             </div>
           </div>
           <div class="carousel-item" data-interval="5000">
             <div
               class="overlay-image"
-              style="background-image: url(./HomePage/img_3.png)"
+              style="background-image: url(./HomePage/professores.jpg)"
             ></div>
             <div class="container-carrousel">
-              <h1>Venha para o IFRN3!!</h1>
+              <h1>Professores Capacitados</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae asperiores magni esse repudiandae vero ea harum,
-                corporis, error possimus distinctio sapiente iure, modi
-                repellendus natus nam non amet nesciunt? Voluptatibus.
+                No campus de São Gonçalo do Amarante, mais precisamente na area
+                de informática temos professores extrmamente capacitados nas
+                mais diversas áreas da técnologia da informação.
               </p>
             </div>
           </div>
@@ -143,6 +152,8 @@
           <span class="carousel-control-next-icon" aria-hidden="true "></span>
         </a>
       </div>
+
+      <!-- carousel final -->
 
       <!-- descrição do curso -->
       <div class="description">
@@ -307,6 +318,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="HomePage/home_page.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script
@@ -324,6 +336,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="HomePage/home_page.js"></script>
   </body>
   <!-- rodapé do site -->
   <footer>

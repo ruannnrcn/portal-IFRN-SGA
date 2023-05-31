@@ -264,111 +264,62 @@ h1 p {
   font-size: 12px;
 }
 
-/* CARROSSEL FIM*/
-
-.description {
+/* inicio da estilização dos cards*/
+.container-turmas {
   display: flex;
   flex-direction: row;
-  text-align: justify;
-  padding: 5%;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 2rem 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body .card {
+  width: 35vh;
+  gap: 1.5rem;
+  width: 35rem;
+  box-shadow: 2px 4px 10px 2px #2a690029;
+  transition: 0.6s;
+}
+.card-body .card:hover {
+  box-shadow: 2px 5px 20px 2px #696969;
+  transition: 0.4s;
+}
+
+.card-text {
+  font-size: 13px;
+  color: #696969;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-}
-.description-paragraph {
-  padding: 2.5%;
-  border-left: 5px solid #2f9e41;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
-  border-radius: 10px;
-  font-size: 14px;
+  margin: 30px;
+  box-shadow: 2px 2px 20px 2px #2a690029;
 }
 
-.dark-mode .description-paragraph {
-  color: var(--cinza);
-  border-left: 5px solid #ffffff;
+.card-body a {
+  text-decoration: none;
+  color: #696969;
 }
 
-.hat {
-  color: #ffffff;
-}
-.description-paragraph h1 {
-  font-weight: bold;
+.card-body a:hover {
   color: #027a00;
-  padding-bottom: 1.2rem;
-  padding-top: 1.4rem;
+  transition: 0.4s;
 }
-.dark-mode .description-paragraph h1{
-  color: #ffffff;
+
+.card-title {
+  font-size: 17px;
+  font-weight: bold;
 }
-.details {
-  font-size: 12px;
-  padding: 2%;
-  margin-left: 2%;
-  margin-left: 2.5%;
-  display: flex;
-  border-left: 5px solid #2f9e41;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
-  border-radius: 10px;
-  height: 31em;
-}
-.dark-mode .details{
-  border-left: 5px solid #ececec;
-}
-.details ul {
-  font-size: large;
-  margin-bottom: 10%;
+
+.card-header h1 {
+  font-size: 2.5rem;
   text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: #027a00;
-  
-}
-.dark-mode .details ul{
-  color: #ffffff;
-}
-.row1-details {
-  display: flex;
-  margin-left: -7%;
-  justify-content: space-around;
-}
-.row2-details {
-  display: flex;
-  justify-content: space-around;
+  font-weight: 500;
+  width: 100%;
 }
 
-.list-duracao {
-  margin-left: -42%;
-}
-.list-4anos {
-  margin-left: -58%;
-}
-
-.list-horas {
-  margin-left: -15%;
-}
-.campus {
-  font-size: 1.25rem;
-  line-height: 1em;
-  padding: 0.35rem 0.75rem;
-  border-radius: 25px;
-  background-color: #e0e0e0;
-  text-decoration: none;
-}
-.dark-mode .campus{
-color: #000;
-}
-.campus-content {
-  padding-left: 1%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-  width: 25em;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
+/* fim da estilização dos cards */
 
 /* footer */
 
@@ -382,10 +333,6 @@ footer .div-footer {
   color: #ffffff;
 }
 
-.imgs {
-  display: flex;
-  align-content: center;
-}
 footer a {
   padding: 1.5rem;
 }
@@ -395,18 +342,17 @@ div.list-header {
   gap: 10px;
   align-items: center;
 }
-.dark-mode div.list-header {
-  color: #ffffff;
-} 
 
 div.list-description {
   text-align: center;
 }
-.dark-mode div.list-description {
-  color: var(--cinza);
-}
+
 div.list-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.imgs img {
+  width: 2.2rem;
 }

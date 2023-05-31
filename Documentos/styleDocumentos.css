@@ -24,13 +24,9 @@
   padding-left: 0.5em;
   display: flex;
 }
-body {
-  display: block;
-  margin: auto;
-}
 
-body.dark-mode {
-  background-color: var(--fundo-preto);
+main.dark-mode {
+  background-color: #000;
 }
 .dark-mode .txt p:nth-child(1) {
   color: #000;
@@ -39,6 +35,15 @@ body.dark-mode {
 .dark-mode .txt p:nth-child(2) {
   color: var(--cinza);
   font-weight: bold;
+}
+
+.dark-mode .card{
+  background-color: var(--fundo-preto);
+  color: var(--cinza);
+}
+.dark-mode main{
+  background-color: var(--fundo-preto);
+  color: var(--cinza);
 }
 
 #Titulo-ifrn {
@@ -223,152 +228,40 @@ nav {
 }
 /* Menu do titulo da pagina  fim*/
 
-/* CARROSSEL */
-.carousel-item {
-  height: 32rem;
-  background: #000;
-  color: #fff;
-  position: relative;
-}
-
-.container-carrousel {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 5rem;
-}
-
-.container-carrousel,
-h1 p {
-  padding: 4rem 2rem;
-  width: 80vh;
-}
-
-.overlay-image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.45;
-}
-
-#myCarousel {
-  margin: 26px 65px;
-}
-
-.carousel-inner p {
-  font-size: 12px;
-}
-
-/* CARROSSEL FIM*/
-
-.description {
-  display: flex;
-  flex-direction: row;
-  text-align: justify;
-  padding: 5%;
-}
+/* estilização da main */
 
 main {
-  display: flex;
-  flex-direction: column;
+  margin: 30px 40px;
+  box-shadow: 2px 4px 10px 2px #2a690029;
 }
-.description-paragraph {
-  padding: 2.5%;
-  border-left: 5px solid #2f9e41;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
+
+.card-body .card {
+  margin: 20px;
+}
+.card-text {
+  font-size: 15px;
+}
+.card-header {
+
+}
+.dark-mode .card-header{
+  background-color: var(--fundo-preto);
+}
+
+.card-body .btn {
   border-radius: 10px;
-  font-size: 14px;
 }
 
-.dark-mode .description-paragraph {
-  color: var(--cinza);
-  border-left: 5px solid #ffffff;
+.card-body a {
+  font-size: 13px;
 }
 
-.hat {
-  color: #ffffff;
-}
-.description-paragraph h1 {
-  font-weight: bold;
-  color: #027a00;
-  padding-bottom: 1.2rem;
-  padding-top: 1.4rem;
-}
-.dark-mode .description-paragraph h1{
-  color: #ffffff;
-}
-.details {
-  font-size: 12px;
-  padding: 2%;
-  margin-left: 2%;
-  margin-left: 2.5%;
-  display: flex;
-  border-left: 5px solid #2f9e41;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
-  border-radius: 10px;
-  height: 31em;
-}
-.dark-mode .details{
-  border-left: 5px solid #ececec;
-}
-.details ul {
-  font-size: large;
-  margin-bottom: 10%;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: #027a00;
-  
-}
-.dark-mode .details ul{
-  color: #ffffff;
-}
-.row1-details {
-  display: flex;
-  margin-left: -7%;
-  justify-content: space-around;
-}
-.row2-details {
-  display: flex;
-  justify-content: space-around;
+.card-body .card-header {
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.list-duracao {
-  margin-left: -42%;
-}
-.list-4anos {
-  margin-left: -58%;
-}
-
-.list-horas {
-  margin-left: -15%;
-}
-.campus {
-  font-size: 1.25rem;
-  line-height: 1em;
-  padding: 0.35rem 0.75rem;
-  border-radius: 25px;
-  background-color: #e0e0e0;
-  text-decoration: none;
-}
-.dark-mode .campus{
-color: #000;
-}
-.campus-content {
-  padding-left: 1%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-  width: 25em;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
+/* fim da estilização da main */
 
 /* footer */
 
@@ -382,10 +275,6 @@ footer .div-footer {
   color: #ffffff;
 }
 
-.imgs {
-  display: flex;
-  align-content: center;
-}
 footer a {
   padding: 1.5rem;
 }
@@ -395,18 +284,17 @@ div.list-header {
   gap: 10px;
   align-items: center;
 }
-.dark-mode div.list-header {
-  color: #ffffff;
-} 
 
 div.list-description {
   text-align: center;
 }
-.dark-mode div.list-description {
-  color: var(--cinza);
-}
+
 div.list-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.imgs img {
+  width: 2.2rem;
 }
