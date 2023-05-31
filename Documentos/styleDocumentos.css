@@ -230,11 +230,13 @@ nav {
 
 /* estilização da main */
 
-.card {
-  margin: 0px 20px 20px 20px;
+main {
+  margin: 30px 40px;
+  box-shadow: 2px 4px 10px 2px #2a690029;
 }
-.dark-mode card{
-  background-color: var(--fundo-preto);
+
+.card-body .card {
+  margin: 20px;
 }
 .card-text {
   font-size: 15px;
@@ -247,13 +249,20 @@ nav {
 }
 
 .card-body .btn {
-  width: 20vh;
-  border-radius: 5rem;
+  border-radius: 10px;
 }
 
 .card-body a {
   font-size: 13px;
 }
+
+.card-body .card-header {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* fim da estilização da main */
+
 /* footer */
 
 footer .div-footer {
