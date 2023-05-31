@@ -23,7 +23,7 @@ function darkmode() {
   checkbox.checked = true; //set checkbox to be checked state
   sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
   var image = document.getElementsByClassName("logo-ifrn-dark");
-image.src = "logo-ifrn-light"
+image.src = "../HomePage/logo-ifrn-light.svg"
 }
 
 //function for checkbox when checkbox is not checked
