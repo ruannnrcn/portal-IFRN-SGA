@@ -30,3 +30,4 @@ function nodark() {
   checkbox.checked = false; //set checkbox to be unchecked state
   sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
 }
+
