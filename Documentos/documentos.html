@@ -34,20 +34,30 @@
   </head>
   <header>
     <!-- logo do ifrn -->
-    <img class="logo-ifrn" src="../HomePage/logo-ifrn.svg" alt="" />
+    <img
+      class="logo-ifrn"
+      src="https://portal.ifrn.edu.br/static/images/logo.svg?da3b22901768"
+      alt=""
+    />
 
-    <!--TITULO DO SITE IFRN-->
     <p id="Titulo-ifrn">
       Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
     </p>
 
     <!-- Botao de troca de Dark para Light -->
-    <button class="botao-Tema"><a href="">tema</a></button>
+    <div class="butao-busca">
+      <label class="switch">
+        <input type="checkbox" id="ChangeTheme" />
+        <span class="slider"></span>
+      </label>
+    </div>
 
     <!-- Botao de Busca -->
     <div id="divBusca">
-      <input type="text" id="txtBusca" placeholder="Buscar..." />
-      <i class="fa fa-search"></i>
+      <form class="example" action="/action_page.php">
+        <input type="text" placeholder="Pesquisa" name="search2" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
     </div>
   </header>
 
@@ -166,6 +176,7 @@
         </div>
       </div>
     </main>
+    <script src="../HomePage/home_page.js"></script>
   </body>
 
   <footer>
