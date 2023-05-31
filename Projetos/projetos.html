@@ -35,24 +35,32 @@
   <body>
     <header>
       <!-- logo do ifrn -->
-      <img class="logo-ifrn" src="../HomePage/logo-ifrn.svg" alt="" />
+      <img
+        class="logo-ifrn"
+        src="https://portal.ifrn.edu.br/static/images/logo.svg?da3b22901768"
+        alt=""
+      />
 
-      <!--TITULO DO SITE IFRN-->
       <p id="Titulo-ifrn">
         Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
       </p>
 
       <!-- Botao de troca de Dark para Light -->
-      <button class="botao-Tema"><a href="">tema</a></button>
+      <div class="butao-busca">
+        <label class="switch">
+          <input type="checkbox" id="ChangeTheme" />
+          <span class="slider"></span>
+        </label>
+      </div>
 
       <!-- Botao de Busca -->
       <div id="divBusca">
-        <input type="text" id="txtBusca" placeholder="Buscar..." />
-        <i class="fa fa-search"></i>
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Pesquisa" name="search2" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
       </div>
-    </header
-      <div class="nav-menu">
-        <ul c>
+    </header>
 
     <!-- barra de navegação -->
     <nav>lass="menu">
@@ -66,10 +74,10 @@
       </div>
     </nav>
     <!-- cards dos projetos -->
-    
+
     <!-- <main id="projeto-area"> -->
     <div>
-      <h3>projetos em andamento</h3>
+      <h1>projetos em andamento</h1>
     </div>
     <div class="card-group">
       <div class="card mb-8">
@@ -83,7 +91,12 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title"><a href="#"> Desenvolvimento de aplicativo móvel para o auxílio do ensaio de Sondagem de Simples Reconhecimento </a></h5>
+              <h5 class="card-title">
+                <a href="#">
+                  Desenvolvimento de aplicativo móvel para o auxílio do ensaio
+                  de Sondagem de Simples Reconhecimento
+                </a>
+              </h5>
               <p class="card-text">descrição</p>
               <p class="card-text">
                 <small class="text-muted">Marcelo Damasceno de Melo</small>
@@ -114,7 +127,7 @@
       </div>
     </div>
     <div class="card-group">
-      <div class="card mb-3">
+      <div class="card mb-8">
         <div class="row g-0">
           <div class="col-md-4">
             <img
@@ -123,93 +136,17 @@
               alt="projeto chuva"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title"><a href="#"> projeto chuva</a></h5>
+              <h5 class="card-title">
+                <a href="#">
+                  Desenvolvimento de aplicativo móvel para o auxílio do ensaio
+                  de Sondagem de Simples Reconhecimento
+                </a>
+              </h5>
               <p class="card-text">descrição</p>
               <p class="card-text">
-                <small class="text-muted">marcelo damasceno</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="/HomePage/imagem-setic2022.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <h5 class="card-title"><a href="#"> projeto propina</a></h5>
-              <p class="card-text">descrição</p>
-              <p class="card-text">
-                <small class="text-muted">marcelo damasceno</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group 1">
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="/HomePage/imagem-setic2022.jpg"
-              class="img-fluid rounded-start"
-              alt="projeto chuva"
-            />
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <h5 class="card-title"><a href="#"> projeto chuva</a></h5>
-              <p class="card-text">descrição</p>
-              <p class="card-text">
-                <small class="text-muted">marcelo damasceno</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="/HomePage/imagem-setic2022.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <h5 class="card-title"><a href="#"> projeto propina</a></h5>
-              <p class="card-text">descrição</p>
-              <p class="card-text">
-                <small class="text-muted">marcelo damasceno</small>
-              </p>
-    </div>
-    <h3>projetos finalizados</h3>
-    <div class="card-group">
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="/HomePage/imagem-setic2022.jpg"
-              class="img-fluid rounded-start"
-              alt="projeto chuva"
-            />
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <h5 class="card-title"><a href="#"> projeto chuva</a></h5>
-              <p class="card-text">descrição</p>
-              <p class="card-text">
-                <small class="text-muted">marcelo damasceno</small>
+                <small class="text-muted">Marcelo Damasceno de Melo</small>
               </p>
             </div>
           </div>
@@ -224,7 +161,7 @@
               alt="foto"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title"><a href="#"> projeto bolinho</a></h5>
               <p class="card-text">descrição</p>
@@ -237,7 +174,7 @@
       </div>
     </div>
     <div class="card-group">
-      <div class="card mb-3">
+      <div class="card mb-8">
         <div class="row g-0">
           <div class="col-md-4">
             <img
@@ -246,12 +183,17 @@
               alt="projeto chuva"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title"><a href="#"> projeto chuva</a></h5>
+              <h5 class="card-title">
+                <a href="#">
+                  Desenvolvimento de aplicativo móvel para o auxílio do ensaio
+                  de Sondagem de Simples Reconhecimento
+                </a>
+              </h5>
               <p class="card-text">descrição</p>
               <p class="card-text">
-                <small class="text-muted">marcelo damasceno</small>
+                <small class="text-muted">Marcelo Damasceno de Melo</small>
               </p>
             </div>
           </div>
@@ -266,7 +208,7 @@
               alt="foto"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title"><a href="#"> projeto bolinho</a></h5>
               <p class="card-text">descrição</p>
@@ -278,7 +220,107 @@
         </div>
       </div>
     </div>
+    <div>
+      <h1>projetos finalizados</h1>
+    </div>
+    <div class="card-group">
+      <div class="card mb-8">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="/HomePage/imagem-setic2022.jpg"
+              class="img-fluid rounded-start"
+              alt="projeto chuva"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="#">
+                  Desenvolvimento de aplicativo móvel para o auxílio do ensaio
+                  de Sondagem de Simples Reconhecimento
+                </a>
+              </h5>
+              <p class="card-text">descrição</p>
+              <p class="card-text">
+                <small class="text-muted">Marcelo Damasceno de Melo</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="/HomePage/imagem-setic2022.jpg"
+              class="img-fluid rounded-start"
+              alt="foto"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#"> projeto bolinho</a></h5>
+              <p class="card-text">descrição</p>
+              <p class="card-text">
+                <small class="text-muted">marcelo damasceno</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card mb-8">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="/HomePage/imagem-setic2022.jpg"
+              class="img-fluid rounded-start"
+              alt="projeto chuva"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="#">
+                  Desenvolvimento de aplicativo móvel para o auxílio do ensaio
+                  de Sondagem de Simples Reconhecimento
+                </a>
+              </h5>
+              <p class="card-text">descrição</p>
+              <p class="card-text">
+                <small class="text-muted">Marcelo Damasceno de Melo</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="/HomePage/imagem-setic2022.jpg"
+              class="img-fluid rounded-start"
+              alt="foto"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#"> projeto bolinho</a></h5>
+              <p class="card-text">descrição</p>
+              <p class="card-text">
+                <small class="text-muted">marcelo damasceno</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- fim dos cards de projetos -->
+
+    <script src="/HomePage/home_page.js"></script>
     <!-- </main> -->
       <!-- rodapé do site -->
       <footer>
