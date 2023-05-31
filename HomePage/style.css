@@ -293,7 +293,7 @@ main {
 
 .dark-mode .description-paragraph {
   color: var(--cinza);
-  border-left: 5px solid #ffffff;
+  border-left: 5px solid #f7f7f7;
 }
 
 .hat {
@@ -306,7 +306,7 @@ main {
   padding-top: 1.4rem;
 }
 .dark-mode .description-paragraph h1{
-  color: #ffffff;
+  color: #f7f7f7;
 }
 .details {
   font-size: 12px;
@@ -320,7 +320,7 @@ main {
   height: 31em;
 }
 .dark-mode .details{
-  border-left: 5px solid #ececec;
+  border-left: 5px solid #f7f7f7;
 }
 .details ul {
   font-size: large;
@@ -402,7 +402,7 @@ div.list-header {
   align-items: center;
 }
 .dark-mode div.list-header {
-  color: #ffffff;
+  color: #f7f7f7;
 } 
 
 div.list-description {
