@@ -32,163 +32,186 @@
 
     <title>IFRN - São Gonçalo do Amarante</title>
   </head>
-  <header>
-    <!-- logo do ifrn -->
-    <img class="logo-ifrn" src="../HomePage/logo-ifrn.svg" alt="" />
-
-    <!--TITULO DO SITE IFRN-->
-    <p id="Titulo-ifrn">
-      Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
-    </p>
-
-    <!-- Botao de troca de Dark para Light -->
-    <button class="botao-Tema"><a href="">tema</a></button>
-
-    <!-- Botao de Busca -->
-    <div id="divBusca">
-      <input type="text" id="txtBusca" placeholder="Buscar..." />
-      <i class="fa fa-search"></i>
-    </div>
-  </header>
-
-  <!-- barra de navegação -->
-  <nav>
-    <div class="nav-menu">
-      <ul class="menu">
-        <li><a href="../index.html">SOBRE O CURSO</a></li>
-        <li><a href="../Docentes/docentes.html">DOCENTES</a></li>
-        <li><a href="../Documentos/documentos.html">DOCUMENTOS</a></li>
-        <li><a href="../Projetos/projetos.html">PROJETOS</a></li>
-        <li><a href="../Eventos/eventos.html">EVENTOS</a></li>
-        <li><a href="#">DISCENTES</a></li>
-      </ul>
-    </div>
-  </nav>
 
   <body>
+    <header>
+      <!-- logo do ifrn -->
+      <img
+        class="logo-ifrn"
+        src="https://portal.ifrn.edu.br/static/images/logo.svg?da3b22901768"
+        alt=""
+      />
+  
+      <p id="Titulo-ifrn">
+        Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
+      </p>
+  
+      <!-- Botao de troca de Dark para Light -->
+      <div class="butao-busca">
+        <label class="switch">
+          <input type="checkbox" id="ChangeTheme" />
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <!-- Botao de Busca -->
+      <div id="divBusca">
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Pesquisa" name="search2" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+  
+    <!-- barra de navegação -->
+    <nav>
+      <div class="nav-menu">
+        <ul class="menu">
+          <li><a href="#">SOBRE O CURSO</a></li>
+          <li><a href="./Docentes/docentes.html">DOCENTES</a></li>
+          <li><a href="./Documentos/documentos.html">DOCUMENTOS</a></li>
+          <li><a href="./Projetos/projetos.html">PROJETOS</a></li>
+          <li><a href="./Eventos/eventos.html">EVENTOS</a></li>
+          <li><a href="./Discentes/discentes.html">DISCENTES</a></li>
+        </ul>
+      </div>
+    </nav>
     <main>
-      <h1>Turmas Egressas</h1>
-      <div class="container-turmas">
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./fotos-turmas/2016.jpg"
-            alt="Foto turma 2016"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Turma Concluida em 2016</h5>
-            <p class="card-text">
-              Padrinho da turma:
-              <a href="../Docentes/docentes.html">Misael Cortez</a>
-            </p>
-          </div>
-        </div>
+      <div class="card">
+        <div class="card-body">
+          <h1>Turmas Egressas</h1>
+          <div class="container-turmas">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./fotos-turmas/2016.jpg"
+                alt="Foto turma 2016"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turma Concluida em 2016</h5>
+                <p class="card-text">
+                  Padrinho da turma:
+                  <a href="../Docentes/docentes.html">Misael Cortez</a>
+                </p>
+              </div>
+            </div>
 
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./fotos-turmas/2017.jpg"
-            alt="Foto turma 2017"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Turma Concluida em 2017</h5>
-            <p class="card-text">
-              Padrinho da turma:
-              <a href="../Docentes/docentes.html">Leonardo Amorim</a>
-            </p>
-          </div>
-        </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./fotos-turmas/2017.jpg"
+                alt="Foto turma 2017"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turma Concluida em 2017</h5>
+                <p class="card-text">
+                  Padrinho da turma:
+                  <a href="../Docentes/docentes.html">Leonardo Amorim</a>
+                </p>
+              </div>
+            </div>
 
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./fotos-turmas/2018.jpg"
-            alt="Foto turma 2018"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Turma Concluida em 2018</h5>
-            <p class="card-text">
-              Padrinho da turma:
-              <a href="../Docentes/docentes.html">Marcelo Damasceno</a>
-            </p>
-          </div>
-        </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./fotos-turmas/2018.jpg"
+                alt="Foto turma 2018"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turma Concluida em 2018</h5>
+                <p class="card-text">
+                  Padrinho da turma:
+                  <a href="../Docentes/docentes.html">Marcelo Damasceno</a>
+                </p>
+              </div>
+            </div>
 
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./fotos-turmas/2019.jpg"
-            alt="Foto turma 2019"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Turma Concluida em 2019</h5>
-            <p class="card-text">
-              Padrinho da turma:
-              <a href="../Docentes/docentes.html">Leonardo Amorim</a>
-            </p>
-          </div>
-        </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./fotos-turmas/2019.jpg"
+                alt="Foto turma 2019"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turma Concluida em 2019</h5>
+                <p class="card-text">
+                  Padrinho da turma:
+                  <a href="../Docentes/docentes.html">Leonardo Amorim</a>
+                </p>
+              </div>
+            </div>
 
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./fotos-turmas/2020.jpg"
-            alt="Foto turma 2020"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Turma Concluida em 2020</h5>
-            <p class="card-text">
-              Padrinho da turma: <a href="../Docentes/">Julio César</a>
-            </p>
-          </div>
-        </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./fotos-turmas/2020.jpg"
+                alt="Foto turma 2020"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turma Concluida em 2020</h5>
+                <p class="card-text">
+                  Padrinho da turma: <a href="../Docentes/">Julio César</a>
+                </p>
+              </div>
+            </div>
 
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./fotos-turmas/2021.jpg"
-            alt="Foto turma 2021"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Turma Concluida em 2021</h5>
-            <p class="card-text">
-              Padrinho da turma:
-              <a href="../Docentes/docentes.html">Lucas Mariano</a>
-            </p>
-          </div>
-        </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./fotos-turmas/2021.jpg"
+                alt="Foto turma 2021"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turma Concluida em 2021</h5>
+                <p class="card-text">
+                  Padrinho da turma:
+                  <a href="../Docentes/docentes.html">Lucas Mariano</a>
+                </p>
+              </div>
+            </div>
 
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./fotos-turmas/2022.jpg"
-            alt="Foto turma 2022"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Turma Concluída em 2022</h5>
-            <p class="card-text">
-              Padrinho da turma:
-              <a href="../Docentes/docentes.html">Marcelo Damasceno</a>
-            </p>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./fotos-turmas/2022.jpg"
+                alt="Foto turma 2022"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turma Concluída em 2022</h5>
+                <p class="card-text">
+                  Padrinho da turma:
+                  <a href="../Docentes/docentes.html">Marcelo Damasceno</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <script src="../HomePage/home_page.js"></script>
+  </body>
 
-    <!-- rodapé do site -->
-    <footer>
-      <p class="paragraph_TitleFooter">
+  <footer>
+    <div class="div-footer">
+      <h4 class="h2-footer">
         Copyright © 2023 | Instituto Federal de Educação, Ciência e Tecnologia
         do Rio Grande do Norte
-      </p>
-      <p class="paragraph_titleFooter">Campus São Gonçalo do Amarante</p>
-      <p class="paragraph_titleFooter">
-        Rua Prof. Carlos Guedes Alcoforado, s/n, Centro. CEP: 59291-727
-      </p>
-      <p class="paragraph_titleFooter">
-        E-mail: comunicacao.reitoria@ifrn.edu.br
-      </p>
-      <p class="paragraph_titleFooter">Telefone: (84) 4005-4111</p>
-    </footer>
-  </body>
+      </h4>
+
+      <div class="imgs">
+        <a class="buttom-img" href=""
+          ><img src="../HomePage/icon-instagram 1.svg" alt="icon-instagram"
+        /></a>
+        <a class="buttom-img" href=""
+          ><img src="../HomePage/icon-youtube 1.svg" alt="icon-youtube"
+        /></a>
+        <a class="buttom-img" href=""
+          ><img src="../HomePage/icon-twitter 1.svg" alt="icon-twitter"
+        /></a>
+        <a class="buttom-img" href=""
+          ><img src="../HomePage/icon-facebook 1.svg" alt="icon-facebook"
+        /></a>
+      </div>
+    </div>
+  </footer>
 </html>
