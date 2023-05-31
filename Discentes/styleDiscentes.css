@@ -171,13 +171,15 @@ main {
 .card-title {
   font-size: 17px;
   font-weight: bold;
+  color: #027a00;
 }
 
-.card-header h1 {
+h1 {
   font-size: 2.5rem;
   text-align: center;
-  font-weight: 500;
   width: 100%;
+  color: #027a00;
+  font-weight: bold;
 }
 
 /* fim da estilização dos cards */
