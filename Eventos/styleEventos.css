@@ -29,7 +29,7 @@ body {
   margin: auto;
 }
 
-main.dark-mode {
+body.dark-mode {
   background-color: var(--fundo-preto);
 }
 .dark-mode .txt p:nth-child(1) {
@@ -223,24 +223,104 @@ nav {
 }
 /* Menu do titulo da pagina  fim*/
 
-/* estilização da main */
+/* CARROSSEL */
+.carousel-item {
+  height: 32rem;
+  background: #000;
+  color: #fff;
+  position: relative;
+}
 
-.card {
-  margin: 20px;
+.container-carrousel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 5rem;
+}
+
+.container-carrousel,
+h1 p {
+  padding: 4rem 2rem;
+  width: 80vh;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.45;
+}
+
+#myCarousel {
+  margin: 26px 65px;
+}
+
+.carousel-inner p {
+  font-size: 12px;
+}
+
+/* inicio da estilização dos cards*/
+.container-turmas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 2rem 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body .card {
+  width: 35vh;
+  gap: 1.5rem;
+  width: 35rem;
+  box-shadow: 2px 4px 10px 2px #2a690029;
+  transition: 0.6s;
+}
+.card-body .card:hover {
+  box-shadow: 2px 5px 20px 2px #696969;
+  transition: 0.4s;
 }
 
 .card-text {
-  font-size: 15px;
+  font-size: 13px;
+  color: #696969;
 }
 
-.card-body .btn {
-  width: 20vh;
-  border-radius: 5rem;
+main {
+  margin: 30px;
+  box-shadow: 2px 2px 20px 2px #2a690029;
 }
 
 .card-body a {
-  font-size: 13px;
+  text-decoration: none;
+  color: #696969;
 }
+
+.card-body a:hover {
+  color: #027a00;
+  transition: 0.4s;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card-header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+}
+
+/* fim da estilização dos cards */
+
 /* footer */
 
 footer .div-footer {

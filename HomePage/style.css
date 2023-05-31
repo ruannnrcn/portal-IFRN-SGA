@@ -2,7 +2,11 @@
   --cor-base: #fff;
   --verde: #2f9e41;
   --verde-texto: #027a00;
+  --verde-shadow-claro: #21b33515;
   --cinza: #c0c0c0;
+  --cinza-escuro: #a0a0a0;
+  --preto-texto: #000000;
+  --fundo-preto: #141414;
 }
 
 * {
@@ -13,6 +17,7 @@
   font-family: "Inter", sans-serif;
 }
 
+/* ICONES E LOGOS(INSTAGRAM, FACEBOOK...) */
 .material-icons {
   font-family: "Material Icons";
   font-size: larger;
@@ -24,52 +29,17 @@ body {
   margin: auto;
 }
 
-/* Flex box do titulo da pagina */
-header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  padding: 1rem 15rem 1rem 15rem;
-  gap: 6rem;
-  border-bottom: 1px rgba(33, 179, 53, 0.082) solid;
-  align-items: center;
-  flex-direction: row;
+body.dark-mode {
+  background-color: var(--fundo-preto);
 }
-
-/* botao de pesquisa */
-
-form.example input[type="text"] {
-  border-top-left-radius: 21px;
-  border-bottom-left-radius: 21px;
-  padding: 8px;
-  background: #ffffff;
-  box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
-  float: left;
-  width: 80%;
-  background: #ffffff;
+.dark-mode .txt p:nth-child(1) {
+  color: #000;
+  font-weight: normal;
 }
-
-form.example button {
-  float: left;
-  width: 20%;
-  border-top-right-radius: 21px;
-  border-bottom-right-radius: 21px;
-  padding: 8px;
-  background: #ffffff;
-  box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
-  cursor: pointer;
+.dark-mode .txt p:nth-child(2) {
+  color: var(--cinza);
+  font-weight: bold;
 }
-
-form.example button:hover {
-  background: #0b7dda;
-}
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* fim do botao pesquisa */
 
 #Titulo-ifrn {
   color: black;
@@ -80,6 +50,10 @@ form.example::after {
   line-height: 1.2em;
   margin-bottom: 2px;
 }
+.dark-mode #Titulo-ifrn {
+  color: var(--cinza);
+}
+
 /* Botao de tema - the box around the slider */
 .switch {
   font-size: 17px;
@@ -135,10 +109,84 @@ input:checked + .slider:before {
   transform: translateX(2em) rotate(360deg);
 }
 
+/* Flex box do titulo da pagina */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 1rem 15rem 1rem 15rem;
+  gap: 6rem;
+  border-bottom: 1px --verde-shadow-claro solid;
+  align-items: center;
+  flex-direction: row;
+}
+
+#Titulo-ifrn {
+  color: black;
+  flex-basis: 270px;
+  align-self: end;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 2px;
+}
+.dark-mode #Titulo-ifrn {
+  color: #e2e2e2;
+}
+
+/* botao de pesquisa */
+
+form.example input[type="text"] {
+  border-top-left-radius: 21px;
+  border-bottom-left-radius: 21px;
+  padding: 8px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
+  float: left;
+  width: 80%;
+  background: #ffffff;
+}
+.dark-mode form.example input[type="text"] {
+  box-shadow: 2px 5px 10px rgb(0, 0, 0);
+  background-color: #171717;
+  color: #c0c0c0;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  padding: 8px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
+  cursor: pointer;
+}
+.dark-mode form.example button {
+  box-shadow: 2px 5px 10px rgb(0, 0, 0);
+  background-color: #171717;
+  color: #c0c0c0;
+}
+
+form.example button:hover {
+  background: #027a00;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* fim do botao pesquisa */
+
 /* Menu do titulo da pagina */
 nav {
   box-shadow: 0px 6px 6px 0px #2a690029;
-  padding: 1rem 14rem 0rem 14rem;
+  padding: 0rem 14rem 0rem 14rem;
+  border-top: #00000005 solid 1px;
+}
+.dark-mode nav {
+  box-shadow: 0px 6px 6px 0px #00000029;
 }
 .navBar {
   display: flex;
@@ -147,7 +195,7 @@ nav {
   gap: 2rem;
   align-items: center;
   list-style: none;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 15px 0px rgba(73, 69, 69, 0.16);
 }
 
 .menu {
@@ -163,6 +211,9 @@ nav {
   font-size: 12px;
   color: #696969;
   text-decoration: none;
+}
+.dark-mode .menu a {
+  color: var(--cinza);
 }
 
 .menu a:hover {
@@ -233,14 +284,22 @@ main {
   border-radius: 10px;
   font-size: 14px;
 }
+.dark-mode .description-paragraph {
+  color: var(--cinza);
+  border-left: 5px solid #ffffff;
+}
+
 .hat {
-  color: #afaeae;
+  color: #ffffff;
 }
 .description-paragraph h1 {
   font-weight: bold;
   color: #027a00;
   padding-bottom: 1.2rem;
   padding-top: 1.4rem;
+}
+.dark-mode .description-paragraph h1{
+  color: #ffffff;
 }
 .details {
   font-size: 12px;
@@ -252,6 +311,9 @@ main {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
 }
+.dark-mode .details{
+  border-left: 5px solid #ececec;
+}
 .details ul {
   font-size: large;
   margin-bottom: 10%;
@@ -259,6 +321,10 @@ main {
   text-decoration: none;
   font-weight: bold;
   color: #027a00;
+  
+}
+.dark-mode .details ul{
+  color: #ffffff;
 }
 .row1-details {
   display: flex;
@@ -286,6 +352,10 @@ main {
   padding: 0.35rem 0.75rem;
   border-radius: 25px;
   background-color: #e0e0e0;
+  text-decoration: none;
+}
+.dark-mode .campus{
+color: #000;
 }
 .campus-content {
   padding-left: 1%;
@@ -319,11 +389,16 @@ div.list-header {
   gap: 10px;
   align-items: center;
 }
+.dark-mode div.list-header {
+  color: #ffffff;
+} 
 
 div.list-description {
   text-align: center;
 }
-
+.dark-mode div.list-description {
+  color: var(--cinza);
+}
 div.list-item {
   display: flex;
   flex-direction: column;
