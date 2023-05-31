@@ -24,13 +24,9 @@
   padding-left: 0.5em;
   display: flex;
 }
-body {
-  display: block;
-  margin: auto;
-}
 
 main.dark-mode {
-  background-color: var(--fundo-preto);
+  background-color: #000;
 }
 .dark-mode .txt p:nth-child(1) {
   color: #000;
@@ -39,6 +35,15 @@ main.dark-mode {
 .dark-mode .txt p:nth-child(2) {
   color: var(--cinza);
   font-weight: bold;
+}
+
+.dark-mode .card{
+  background-color: var(--fundo-preto);
+  color: var(--cinza);
+}
+.dark-mode main{
+  background-color: var(--fundo-preto);
+  color: var(--cinza);
 }
 
 #Titulo-ifrn {
@@ -226,11 +231,19 @@ nav {
 /* estilização da main */
 
 .card {
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
 }
-
+.dark-mode card{
+  background-color: var(--fundo-preto);
+}
 .card-text {
   font-size: 15px;
+}
+.card-header {
+
+}
+.dark-mode .card-header{
+  background-color: var(--fundo-preto);
 }
 
 .card-body .btn {
