@@ -284,6 +284,7 @@ main {
   border-radius: 10px;
   font-size: 14px;
 }
+
 .dark-mode .description-paragraph {
   color: var(--cinza);
   border-left: 5px solid #ffffff;
@@ -310,6 +311,7 @@ main {
   border-left: 5px solid #2f9e41;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
+  height: 31em;
 }
 .dark-mode .details{
   border-left: 5px solid #ececec;
@@ -380,6 +382,10 @@ footer .div-footer {
   color: #ffffff;
 }
 
+.imgs {
+  display: flex;
+  align-content: center;
+}
 footer a {
   padding: 1.5rem;
 }
