@@ -6,7 +6,7 @@
   --cinza: #c0c0c0;
   --cinza-escuro: #a0a0a0;
   --preto-texto: #000000;
-  --fundo-preto: #141414;
+  --fundo-preto: #000000e0;
 }
 
 * {
@@ -15,6 +15,7 @@
   outline: 0 none;
   padding: 0;
   font-family: "Inter", sans-serif;
+  transition: 0.4s;
 }
 
 /* ICONES E LOGOS(INSTAGRAM, FACEBOOK...) */
@@ -26,7 +27,7 @@
 }
 
 main.dark-mode {
-  background-color: #000;
+  background-color: rgba(23, 22, 22, 0.655);
 }
 .dark-mode .txt p:nth-child(1) {
   color: #000;
@@ -38,11 +39,11 @@ main.dark-mode {
 }
 
 .dark-mode .card {
-  background-color: var(--fundo-preto);
+  background-color: rgba(150, 150, 150, 0.655);
   color: var(--cinza);
 }
 .dark-mode main {
-  background-color: var(--fundo-preto);
+  background-color: rgba(44, 44, 44, 0.655);
   color: var(--cinza);
 }
 
@@ -88,9 +89,9 @@ main.dark-mode {
   right: 0;
   bottom: 0;
   background-color: #ffffff;
-  box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
+  box-shadow: inset 2px 5px 10px #dbdbdb;
   transition: 0.4s;
-  border-radius: 5px;
+  border-radius: 12px;
 }
 
 .slider:before {
@@ -124,6 +125,11 @@ header {
   border-bottom: 1px --verde-shadow-claro solid;
   align-items: center;
   flex-direction: row;
+}
+
+.dark-mode header {
+  background-color: #171616a7;
+  transition: 0.7s;
 }
 
 #Titulo-ifrn {
@@ -191,7 +197,8 @@ nav {
   border-top: #00000005 solid 1px;
 }
 .dark-mode nav {
-  box-shadow: 0px 6px 6px 0px #00000029;
+  box-shadow: 0px 0px 7px rgba(23, 22, 22, 0.655);
+  background-color: rgba(23, 22, 22, 0.655);
 }
 .navBar {
   display: flex;
@@ -211,6 +218,7 @@ nav {
   align-items: center;
   list-style: none;
   color: #000000;
+  margin: 0%;
 }
 .menu a {
   font-size: 12px;
@@ -231,20 +239,27 @@ nav {
 /* estilização da main */
 
 main {
-  margin: 30px 40px;
   box-shadow: 2px 4px 10px 2px #2a690029;
+  background-color: #fff;
+}
+
+.dark-mode main {
+  background-color: rgba(23, 22, 22, 0.655);
 }
 
 .card-body .card {
   margin: 20px;
+}
+.dark-mode .card-body {
+  background-color: #171616a7;
 }
 .card-text {
   font-size: 15px;
 }
 .card-header {
 }
-.dark-mode .card-header {
-  background-color: var(--fundo-preto);
+
+.dark-mode.card-header {
 }
 
 .card-body .btn {
@@ -258,6 +273,19 @@ main {
 .card-body .card-header {
   font-size: 15px;
   font-weight: 600;
+}
+
+.dark-mode .card {
+  background-color: #171616a7;
+  box-shadow: 0px 0px 7px #00000029;
+}
+
+body {
+  background-color: #fff;
+}
+
+body.dark-mode {
+  background-color: var(--fundo-preto);
 }
 
 /* fim da estilização da main */
