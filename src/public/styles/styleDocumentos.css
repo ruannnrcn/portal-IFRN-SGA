@@ -37,11 +37,11 @@ main.dark-mode {
   font-weight: bold;
 }
 
-.dark-mode .card{
+.dark-mode .card {
   background-color: var(--fundo-preto);
   color: var(--cinza);
 }
-.dark-mode main{
+.dark-mode main {
   background-color: var(--fundo-preto);
   color: var(--cinza);
 }
@@ -96,12 +96,12 @@ main.dark-mode {
 .slider:before {
   position: absolute;
   content: "";
-  height: 1em;
-  width: 0.1em;
-  border-radius: 0px;
-  left: 0.4em;
-  bottom: 0.1em;
-  background-color: rgb(180, 180, 180);
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 100px;
+  left: 0.2em;
+  bottom: 0.4em;
+  background-color: rgb(133, 133, 133);
   transition: 0.4s;
 }
 
@@ -242,9 +242,8 @@ main {
   font-size: 15px;
 }
 .card-header {
-
 }
-.dark-mode .card-header{
+.dark-mode .card-header {
   background-color: var(--fundo-preto);
 }
 
