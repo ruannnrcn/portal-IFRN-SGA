@@ -31,11 +31,14 @@ function nodark() {
   document.body.classList.remove("dark-mode"); //remover a classe adicionada da tag body
   checkbox.checked = false; //definir o estado do checkbox como desmarcado
   sessionStorage.setItem("mode", "light"); //armazenar um nome e valor para saber se o modo escuro está desligado ou o modo claro está ligado
-  
-}
-if (getElementById("imageLogo")) {
-    var image = document.getElementById("imageLogo");
+  var image = document.getElementById("imageLogo");
   image.src = "../public/images/ImagensGerais/logo-ifrn-dark.svg";
-  
 }
-// ia
+
+// if (getElementById("imageLogo")) {
+//   var image = document.getElementById("imageLogo");
+//   image.src = "../public/images/ImagensGerais/logo-ifrn-dark.svg";
+// } else {
+//   document.getElementById("imageLogo");
+//   image.src = "../public/images/ImagensGerais/logo-ifrn-light.svg";
+// }

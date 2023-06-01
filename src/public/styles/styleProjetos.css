@@ -84,20 +84,20 @@ body.dark-mode {
   right: 0;
   bottom: 0;
   background-color: #ffffff;
-  box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
+  box-shadow: inset 2px 5px 10px #dbdbdb;
   transition: 0.4s;
-  border-radius: 5px;
+  border-radius: 12px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 1em;
-  width: 0.1em;
-  border-radius: 0px;
-  left: 0.4em;
-  bottom: 0.1em;
-  background-color: rgb(180, 180, 180);
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 100px;
+  left: 0.2em;
+  bottom: 0.4em;
+  background-color: rgb(133, 133, 133);
   transition: 0.4s;
 }
 
