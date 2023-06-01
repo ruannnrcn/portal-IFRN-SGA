@@ -6,7 +6,7 @@
   --cinza: #c0c0c0;
   --cinza-escuro: #a0a0a0;
   --preto-texto: #000000;
-  --fundo-preto: #141414;
+  --fundo-preto: #000000e0;
 }
 
 * {
@@ -27,6 +27,7 @@
 body {
   display: block;
   margin: auto;
+  background-color: #f8f8ff;
 }
 
 body.dark-mode {
@@ -42,7 +43,7 @@ body.dark-mode {
 }
 
 #Titulo-ifrn {
-  color: black;
+  color: #000000;
   flex-basis: 270px;
   align-self: end;
   font-size: 1.2rem;
@@ -54,7 +55,7 @@ body.dark-mode {
   color: var(--cinza);
 }
 
-/* Botao de tema - the box around the slider */
+/* Botao de tema - the box around the slider--------------------------------------- */
 .switch {
   font-size: 17px;
   position: relative;
@@ -109,7 +110,7 @@ input:checked + .slider:before {
   transform: translateX(2em) rotate(360deg);
 }
 
-/* Flex box do titulo da pagina */
+/* Flex box do titulo da pagina------------------------------------------------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -119,13 +120,14 @@ header {
   border-bottom: 1px --verde-shadow-claro solid;
   align-items: center;
   flex-direction: row;
+
 }
 
 #Titulo-ifrn {
-  color: black;
+  color: #000000;
   flex-basis: 270px;
   align-self: end;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.2em;
   margin-bottom: 2px;
@@ -134,7 +136,7 @@ header {
   color: #e2e2e2;
 }
 
-/* botao de pesquisa */
+/* botao de pesquisa----------------------------------------------- */
 
 form.example input[type="text"] {
   border-top-left-radius: 21px;
@@ -149,7 +151,6 @@ form.example input[type="text"] {
 .dark-mode form.example input[type="text"] {
   box-shadow: 2px 5px 10px rgb(0, 0, 0);
   background-color: #171717;
-  color: #c0c0c0;
 }
 
 form.example button {
@@ -177,7 +178,7 @@ form.example::after {
   clear: both;
   display: table;
 }
-/* fim do botao pesquisa */
+/* fim do botao pesquisa------------------------------------------------------ */
 
 /* Menu do titulo da pagina */
 nav {
@@ -195,7 +196,7 @@ nav {
   gap: 2rem;
   align-items: center;
   list-style: none;
-  box-shadow: 0px 0px 15px 0px rgba(73, 69, 69, 0.16);
+  box-shadow: 0px 0px 15px 0px rgba(255, 0, 0, 0.16);
 }
 
 .menu {
@@ -221,107 +222,47 @@ nav {
   font-weight: 500;
   transition: 0.2s;
 }
-/* Menu do titulo da pagina  fim*/
+/* Menu do titulo da pagina------------------------------------------  fim */ 
 
-/* CARROSSEL */
-.carousel-item {
-  height: 32rem;
-  background: #000;
-  color: #fff;
-  position: relative;
-}
-
-.container-carrousel {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 5rem;
-}
-
-.container-carrousel,
-h1 p {
-  padding: 4rem 2rem;
-  width: 80vh;
-}
-
-.overlay-image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.45;
-}
-
-#myCarousel {
-  margin: 26px 65px;
-}
-
-.carousel-inner p {
-  font-size: 12px;
-}
-
-/* inicio da estilização dos cards*/
-.container-turmas {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 4rem;
-  padding: 2rem 5rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-body .card {
-  width: 35vh;
-  gap: 1.5rem;
-  width: 35rem;
-  box-shadow: 2px 4px 10px 2px #2a690029;
-  transition: 0.6s;
-}
-.card-body .card:hover {
-  box-shadow: 2px 5px 20px 2px #696969;
-  transition: 0.4s;
-}
-
-.card-text {
-  font-size: 13px;
-  color: #696969;
-}
-
-main {
-  margin: 30px;
-  box-shadow: 2px 2px 20px 2px #2a690029;
-}
-
-.card-body a {
-  text-decoration: none;
-  color: #696969;
-}
-
-.card-body a:hover {
-  color: #027a00;
-  transition: 0.4s;
-}
-
-.card-title {
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.card-header h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: 500;
+main{
+  background-color: #04be01;
   width: 100%;
+  height: 100%;
 }
 
-/* fim da estilização dos cards */
+.main-titulo h1{
+  align-content: center;
 
-/* footer */
+}
+
+.conteiner-de-eventos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 1rem 15rem 1rem 15rem;
+  gap: 6rem;
+  border-bottom: 1px --verde-shadow-claro solid;
+  align-items: center;
+  flex-direction: row;
+  background-color: wheat;
+
+}
+
+.card-sesitec{
+  width: 300px;
+  height: 300px;
+}
+
+.card-sesitec img{
+  width: 300px;
+  height: 300px;
+}
+.evento1 {
+  border: solid 1px #000;
+  padding: 0px;
+}
+
+/* footer------------------------------------------------- */
 
 footer .div-footer {
   display: flex;
