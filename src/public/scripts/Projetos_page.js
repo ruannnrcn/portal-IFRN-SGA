@@ -38,3 +38,4 @@ if (getElementById("imageLogo")) {
   image.src = "../public/images/ImagensGerais/logo-ifrn-dark.svg";
   
 }
+// ia
