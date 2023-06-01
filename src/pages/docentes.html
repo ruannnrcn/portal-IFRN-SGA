@@ -4,112 +4,358 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/styles/styleDiscentes.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../public/styles/styleDocentes.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <title>IFRN - São Gonçalo do Amarante</title>
   </head>
   <body>
     <header>
       <!-- logo do ifrn -->
-      <img class="logo-ifrn" src="Home Page/logo-ifrn.svg" alt="" />
-
-      <!--TITULO DO SITE IFRN-->
+      <img
+        id="imageLogo"
+        class="logo-ifrn"
+        src="../public/images/ImagensGerais/logo-ifrn-dark.svg"
+        alt=""
+      />
       <p id="Titulo-ifrn">
         Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
       </p>
 
       <!-- Botao de troca de Dark para Light -->
-      <button class="botao-Tema"><a href="">tema</a></button>
+      <div class="butao-busca">
+        <label class="switch">
+          <input type="checkbox" id="ChangeTheme" />
+          <span class="slider"></span>
+        </label>
+      </div>
 
       <!-- Botao de Busca -->
       <div id="divBusca">
-        <input type="text" id="txtBusca" placeholder="Buscar..." />
-        <img src="Home Page/lupa.svg" id="btnBusca" alt="Buscar" />
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Pesquisa" name="search2" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
       </div>
     </header>
 
     <!-- barra de navegação -->
     <nav>
-      <div class="nav-menu">
+      <div class="nav-menu center-flex">
         <ul class="menu">
-          <li><a href="">CURSOS</a></li>
-          <li><a href="">DOCENTES</a></li>
-          <li><a href="">DOCUMENTOS</a></li>
-          <li><a href="">PROJETOS</a></li>
-          <li><a href="">EVENTOS</a></li>
-          <li><a href="">DICENTES</a></li>
+          <li><a href="#">SOBRE O CURSO</a></li>
+          <li><a href="../pages/docentes.html">DOCENTES</a></li>
+          <li><a href="../pages/documentos.html">DOCUMENTOS</a></li>
+          <li><a href="../pages/projetos.html">PROJETOS</a></li>
+          <li><a href="../pages/eventos.html">EVENTOS</a></li>
+          <li><a href="../pages/discentes.html">DISCENTES</a></li>
         </ul>
       </div>
     </nav>
-    <div>
-      <div>
-        <img src="img/foto-damasceno.gif" alt="Foto Marcelo Damasceno" />
-        <div>
-          <p>
-            Atualmente é Professor de Ensino Básico e Tecnológico do Instituto
-            Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte.
-            Possui Doutorado no Programa de Pós Graduação em Sistemas e
-            Computação da Universidade Federal do Rio Grande do Norte e Mestrado
-            em Ciência da Computação pela Universidade Estadual do Ceará (2010).
-            Tem experiência na área de Ciência da Computação, com ênfase em
-            Inteligência Artificial, atuando principalmente nos seguintes temas:
-            Aprendizagem de Máquina, Processo de Mineração de Dados, Ambientes
-            Interativos de Aprendizagem,Criminalidade e Autenticação Biométrica.
-          </p>
-          <a href="http://lattes.cnpq.br/7926838249921187">Currículo Lattes</a>
+    <!-- Conteúdo principal da página-->
+    <main>
+      <div class="card-deck">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-leo.png"
+            alt="Foto Leonardo Amorim"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Leonardo Gomes de Paiva Amorim</h5>
+            <p class="card-text">
+              Mestre no Programa de Pós-Graduação em Engenharia Elétrica e de
+              Computação pela Universidade Federal do Rio Grande do Norte. É
+              professor Efetivo do IFRN (Instituto Federal de Educação, Ciência
+              e Tecnologia do Rio Grande do Norte) campus São Gonçalo do
+              Amarante e coordenador do Curso Técnico de Nível Médio em
+              Informática na Forma Integrado do IFRN...
+            </p>
+            <a
+              href="http://lattes.cnpq.br/0551544254084113"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-raulino.png"
+            alt="Foto Filipe Raulino"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Filipe de Carvalho Pinto Raulino</h5>
+            <p class="card-text">
+              Graduado em Redes de Computadores pelo Instituto Federal de
+              Educação, Ciência e Tecnologia do Rio Grande do Norte (2010).
+              Mestre em Inovação em Tecnologias Educacionais pela Universidade
+              Federal do Rio Grande do Norte (2019). Pós-graduado
+              (especialização) em Computação Forense pela Universidade Potiguar
+              (2012). Possui experiência profissional em Redes de
+              Computadores...
+            </p>
+            <a
+              href="http://lattes.cnpq.br/4793146982503762"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-chiberio.png"
+            alt="Foto Elialdo Chiberio"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Elialdo Chiberio da Silva</h5>
+            <p class="card-text">
+              Possui graduação em Engenharia Elétrica pela Universidade Federal
+              do Rio Grande do Norte (2003), Graduação em Licenciatura em
+              Formação Pedagógica de Docente para Educação Profissional e
+              Tecnológica, pelo Instituto Federal de Educação, Ciência e
+              Tecnologia do Rio Grande do Norte/PANFOR (2017), Especialista em
+              Ciências e Engenharia de Matérias pela UFRN (2006)...
+            </p>
+            <a
+              href="http://lattes.cnpq.br/5426129339908081"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-lucas.png"
+            alt="Foto Lucas Mariano"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Lucas Mariano Galdino de Almeida</h5>
+            <p class="card-text">
+              Atualmente ocupa o cargo de professor efetivo no Instituto Federal
+              de Educação, Ciência e Tecnologia do Rio Grande do Norte, onde
+              também realizou graduação em Tecnologia em Desenvolvimento de
+              Software. É mestre pelo Programa de Pós-Graduação em Sistemas e
+              Computação da Universidade Federal do Rio Grande do Norte
+              (PPGSC/UFRN) (2018)...
+            </p>
+            <a
+              href="http://lattes.cnpq.br/2315827645703973"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-mizael.png"
+            alt="Foto Everson Mizael"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Everson Mizael Cortez Silva</h5>
+            <p class="card-text">
+              Professor do Instituto Federal de Educação, Ciência e Tecnologia
+              do Rio Grande do Norte (IFRN) - Campus São Gonçalo do Amarante,
+              onde ministra disciplinas, principalmente, na área de Redes de
+              Computadores e, desde abril/2016, está exercendo a função de
+              Coordenador de Tecnologia da Informação. Concluirá, no início de
+              2017, a especialização em Gestão...
+            </p>
+            <a
+              href="http://lattes.cnpq.br/6909875965757115"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-damasceno.png"
+            alt="Foto Marcelo Damasceno"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Marcelo Damasceno de Melo</h5>
+            <p class="card-text">
+              Atualmente é Professor de Ensino Básico e Tecnológico do Instituto
+              Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte.
+              Possui Doutorado no Programa de Pós Graduação em Sistemas e
+              Computação da Universidade Federal do Rio Grande do Norte e
+              Mestrado em Ciência da Computação pela Universidade Estadual do
+              Ceará (2010)...
+            </p>
+            <a
+              href="http://lattes.cnpq.br/7926838249921187"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-daniel.png"
+            alt="Foto Daniel Lopes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Daniel Lopes Martins</h5>
+            <p class="card-text">
+              Doutor em Engenharia Elétrica e de Computação pela Universidade
+              Federal do Rio Grande do Norte (UFRN)(2018), Mestre em Engenharia
+              Elétrica e de Computação pela UFRN (2011) e Graduado em Engenharia
+              de Computação e Automação pela UFRN (2008). Técnico em
+              eletrotécnica pelo Centro Federal de Educação Tecnológica (CEFET)
+              (2005), atual Instituto Federal de Educação, Ciência e Tecnologia
+              do Rio Grande do Norte (IFRN)...
+            </p>
+            <a
+              href="http://lattes.cnpq.br/2947003499946183"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-macedo.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">José Macêdo Firmino Filho</h5>
+            <p class="card-text">
+              Doutor em Engenharia Elétrica e de Computação pela Universidade
+              Federal do Rio Grande do Norte (UFRN). Professor do IFRN lotado no
+              no Campus São Gonçalo do Amarantes. Tem experiência na área de
+              Engenharia da Computação, com ênfase em Sistemas de Informação em
+              Saúde, atuando principalmente nos seguintes temas de pesquisa:
+              Cidades Inteligentes, Segurança em Redes de Computadores e Redes
+              IoT.
+            </p>
+            <a
+              href="http://lattes.cnpq.br/4793146982503762"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-iria.png"
+            alt="Foto Íria Cosme"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Íria Caline Saraiva Cosme</h5>
+            <p class="card-text">
+              Atua como professora efetiva de Redes de Computadores do Instituto
+              Federal do Rio Grande do Norte - IFRN. Possui doutorado em
+              Engenharia Elétrica e de Computação, pelo Programa de
+              Pós-graduação em Engenharia Elétrica e de Computação (PPgEEC) da
+              Universidade Federal do Rio Grande do Norte (UFRN). É graduada em
+              Ciência da Computação pela Universidade do Estado do Rio Grande do
+              Norte - UERN (2004)...
+            </p>
+            <a
+              href="http://lattes.cnpq.br/2418349885515438"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/ImagensDocentes/foto-felipe.png"
+            alt="Foto Felipe Alves"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Professor Felipe Alves Pereira Pinto</h5>
+            <p class="card-text">
+              Professor efetivo do Instituto Federal de Educação, Ciência e
+              Tecnologia do Rio Grande do Norte (IFRN) da matéria/disciplina
+              Sistemas de Informação. Doutor em Ciência da Computação pelo
+              Programa de Pós-graduação em Sistemas e Computação (PPgSC) da
+              Universidade Federal do Rio Grande do Norte (UFRN). Fez mestrado
+              em Sistemas e Computação também pelo programa PPgSC...
+            </p>
+            <a
+              href="http://lattes.cnpq.br/6163607072712192"
+              class="btn btn-primary"
+              >Currículo Lattes</a
+            >
+          </div>
         </div>
       </div>
-      <div>
-        <img src="img/foto-damasceno.gif" alt="Foto Marcelo Damasceno" />
-        <div>
-          <p>
-            Atualmente é Professor de Ensino Básico e Tecnológico do Instituto
-            Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte.
-            Possui Doutorado no Programa de Pós Graduação em Sistemas e
-            Computação da Universidade Federal do Rio Grande do Norte e Mestrado
-            em Ciência da Computação pela Universidade Estadual do Ceará (2010).
-            Tem experiência na área de Ciência da Computação, com ênfase em
-            Inteligência Artificial, atuando principalmente nos seguintes temas:
-            Aprendizagem de Máquina, Processo de Mineração de Dados, Ambientes
-            Interativos de Aprendizagem,Criminalidade e Autenticação Biométrica.
-          </p>
-          <a href="http://lattes.cnpq.br/7926838249921187">Currículo Lattes</a>
+    </main>
+
+    <!-- rodapé do site -->
+    <footer>
+      <div class="div-footer">
+        <h4 class="h2-footer">
+          Copyright © 2023 | Instituto Federal de Educação, Ciência e Tecnologia
+          do Rio Grande do Norte
+        </h4>
+
+        <div class="imgs">
+          <a class="buttom-img" href=""
+            ><img
+              src="../public/images/ImagensGerais/icon-instagram 1.svg"
+              alt="icon-instagram"
+          /></a>
+          <a class="buttom-img" href=""
+            ><img
+              src="../public/images/ImagensGerais/icon-youtube 1.svg"
+              alt="icon-youtube"
+          /></a>
+          <a class="buttom-img" href=""
+            ><img
+              src="../public/images/ImagensGerais/icon-twitter 1.svg"
+              alt="icon-twitter"
+          /></a>
+          <a class="buttom-img" href=""
+            ><img
+              src="../public/images/ImagensGerais/icon-facebook 1.svg"
+              alt="icon-facebook"
+          /></a>
         </div>
       </div>
-      <div>
-        <img src="img/foto-damasceno.gif" alt="Foto Marcelo Damasceno" />
-        <div>
-          <p>
-            Atualmente é Professor de Ensino Básico e Tecnológico do Instituto
-            Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte.
-            Possui Doutorado no Programa de Pós Graduação em Sistemas e
-            Computação da Universidade Federal do Rio Grande do Norte e Mestrado
-            em Ciência da Computação pela Universidade Estadual do Ceará (2010).
-            Tem experiência na área de Ciência da Computação, com ênfase em
-            Inteligência Artificial, atuando principalmente nos seguintes temas:
-            Aprendizagem de Máquina, Processo de Mineração de Dados, Ambientes
-            Interativos de Aprendizagem,Criminalidade e Autenticação Biométrica.
-          </p>
-          <a href="http://lattes.cnpq.br/7926838249921187">Currículo Lattes</a>
-        </div>
-      </div>
-      <div>
-        <img src="img/foto-damasceno.gif" alt="Foto Marcelo Damasceno" />
-        <div>
-          <p>
-            Atualmente é Professor de Ensino Básico e Tecnológico do Instituto
-            Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte.
-            Possui Doutorado no Programa de Pós Graduação em Sistemas e
-            Computação da Universidade Federal do Rio Grande do Norte e Mestrado
-            em Ciência da Computação pela Universidade Estadual do Ceará (2010).
-            Tem experiência na área de Ciência da Computação, com ênfase em
-            Inteligência Artificial, atuando principalmente nos seguintes temas:
-            Aprendizagem de Máquina, Processo de Mineração de Dados, Ambientes
-            Interativos de Aprendizagem,Criminalidade e Autenticação Biométrica.
-          </p>
-          <a href="http://lattes.cnpq.br/7926838249921187">Currículo Lattes</a>
-        </div>
-      </div>
-    </div>
+    </footer>
+    <script src="../public/scripts/docentes_page.js"></script>
   </body>
 </html>
