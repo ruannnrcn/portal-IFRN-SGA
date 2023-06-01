@@ -22,23 +22,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="/Eventos/styleEventos.css" />
+    <link rel="stylesheet" href="../public/styles/styleEventos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="HomePage/home_page.js" />
 
     <title>IFRN - São Gonçalo do Amarante</title>
   </head>
-
   <body>
     <header>
       <!-- logo do ifrn -->
       <img
-        class="logo-ifrn-dark" id="logoIfrnDark" src="/HomePage/logo-ifrn-light.svg"alt=""/>
+        id="imageLogo"
+        class="logo-ifrn"
+        src="../public/images/ImagensGerais/logo-ifrn-dark.svg"
+        alt=""
+      />
       <p id="Titulo-ifrn">
         Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
       </p>
@@ -62,108 +64,139 @@
 
     <!-- barra de navegação -->
     <nav>
-      <div class="nav-menu">
+      <div class="nav-menu center-flex">
         <ul class="menu">
-          <li><a href="/index.html">SOBRE O CURSO</a></li>
-          <li><a href="./Docentes/docentes.html">DOCENTES</a></li>
-          <li><a href="./Documentos/documentos.html">DOCUMENTOS</a></li>
-          <li><a href="./Projetos/projetos.html">PROJETOS</a></li>
-          <li><a href="./Eventos/eventos.html">EVENTOS</a></li>
-          <li><a href="../Discentes/discentes.html">DISCENTES</a></li>
+          <li><a href="#">SOBRE O CURSO</a></li>
+          <li><a href="../pages/docentes.html">DOCENTES</a></li>
+          <li><a href="../pages/documentos.html">DOCUMENTOS</a></li>
+          <li><a href="../pages/projetos.html">PROJETOS</a></li>
+          <li><a href="../pages/eventos.html">EVENTOS</a></li>
+          <li><a href="../pages/discentes.html">DISCENTES</a></li>
         </ul>
       </div>
     </nav>
-<main>
+    <!-- Conteúdo principal da página-->
+    <main>
 
-  <div class="main-titulo">
-    <h1>Eventos</h1>
-  </div>
-  
-  <!-- CONTEINER PARA COLOCAR OS EVENTO--------------------------------------------------------- -->
-  <div class="conteiner-de-eventos">
+      <div class="card-deck">
 
-    <div class="evento1">
-        <div class="card-sesitec">
-        <img src="/Eventos/fotosEventos/palestraProgramador2.jpeg" alt="">
-        <p>SECITEC</p>
-    </div>
-    </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/Eventos/fotosEventos/FotoMicro.jpeg"
+            alt="Foto Filipe Raulino" />
+          <div class="card-body">
+            <h5 class="card-title">Filipe de Carvalho Pinto Raulino</h5>
+        </div>
 
-    <div class="evento1">
-        <div class="card-sesitec">
-        <img src="/Eventos/fotosEventos/FotoMicro.jpeg" alt="">
-        <p>SECITEC</p>
-    </div>
-  </div>
-
-    <div class="evento1">
-        <div class="card-sesitec">
-        <img src="/Eventos/fotosEventos/Micro-controlador.jpeg" alt="">
-        <p>SECITEC</p>
-    </div>
-  </div>
-
-    <div class="evento1">
-       <div class="card-sesitec">
-        <img src="/Eventos/fotosEventos/microControlador2.jpeg" alt="">
-        <p>SECITEC</p>
-    </div>
-
-    <div class="evento1">
-      <div class="card-sesitec">
-      <img src="/Eventos/fotosEventos/Nuvem.jpeg" alt="">
-      <p>SECITEC</p>
-  </div>
-  </div>
-
-  <div class="evento1">
-      <div class="card-sesitec">
-      <img src="/Eventos/fotosEventos/nuvem2.jpeg" alt="">
-      <p>SECITEC</p>
-  </div>
-</div>
-
-  <div class="evento1">
-      <div class="card-sesitec">
-      <img src="/Eventos/fotosEventos/nuvem3.jpeg" alt="">
-      <p>SECITEC</p>
-  </div>
-</div>
-
-  <div class="evento1">
-     <div class="card-sesitec">
-      <img src="/Eventos/fotosEventos/palestraProgramador.jpeg" alt="">
-      <p>SECITEC</p>
-  </div>
-  </div>
- <!-- CONTEINER PARA COLOCAR OS EVENTO FIm---------------------------------------------------------S -->
-    </div>
-</main>
-
-      <footer>
-        <div class="div-footer">
-          <h4 class="h2-footer">
-            Copyright © 2023 | Instituto Federal de Educação, Ciência e Tecnologia
-            do Rio Grande do Norte
-          </h4>
-    
-          <div class="imgs">
-            <a class="buttom-img" href=""
-              ><img src="../HomePage/icon-instagram 1.svg" alt="icon-instagram"
-            /></a>
-            <a class="buttom-img" href=""
-              ><img src="../HomePage/icon-youtube 1.svg" alt="icon-youtube"
-            /></a>
-            <a class="buttom-img" href=""
-              ><img src="../HomePage/icon-twitter 1.svg" alt="icon-twitter"
-            /></a>
-            <a class="buttom-img" href=""
-              ><img src="../HomePage/icon-facebook 1.svg" alt="icon-facebook"
-            /></a>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/Eventos/fotosEventos/Micro-controlador.jpeg"
+            alt="Foto Elialdo Chiberio"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Elialdo Chiberio da Silva</h5>
           </div>
         </div>
-      </footer>
-      <script src="../HomePage/home_page.js"></scripts>
-  </body>
 
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/Eventos/fotosEventos/microControlador2.jpeg"
+            alt="Foto Lucas Mariano"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Lucas Mariano Galdino de Almeida</h5>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/Eventos/fotosEventos/Nuvem.jpeg"
+            alt="Foto Everson Mizael"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Everson Mizael Cortez Silva</h5>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/Eventos/fotosEventos/nuvem2.jpeg"
+            alt="Foto Marcelo Damasceno"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Marcelo Damasceno de Melo</h5>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/Eventos/fotosEventos/nuvem3.jpeg"
+            alt="Foto Daniel Lopes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Daniel Lopes Martins</h5>
+
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/Eventos/fotosEventos/palestraProgramador.jpeg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">José Macêdo Firmino Filho</h5>
+
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../public/images/Eventos/fotosEventos/palestraProgramador2.jpeg"
+            alt="Foto Íria Cosme"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Íria Caline Saraiva Cosme</h5>
+    
+        </div>
+      </div>
+    </main>
+
+    <!-- rodapé do site -->
+    <footer>
+      <div class="div-footer">
+        <h4 class="h2-footer">
+          Copyright © 2023 | Instituto Federal de Educação, Ciência e Tecnologia
+          do Rio Grande do Norte
+        </h4>
+
+        <div class="imgs">
+          <a class="buttom-img" href=""
+            ><img
+              src="../public/images/ImagensGerais/icon-instagram 1.svg"
+              alt="icon-instagram"
+          /></a>
+          <a class="buttom-img" href=""
+            ><img
+              src="../public/images/ImagensGerais/icon-youtube 1.svg"
+              alt="icon-youtube"
+          /></a>
+          <a class="buttom-img" href=""
+            ><img
+              src="../public/images/ImagensGerais/icon-twitter 1.svg"
+              alt="icon-twitter"
+          /></a>
+          <a class="buttom-img" href=""
+            ><img
+              src="../public/images/ImagensGerais/icon-facebook 1.svg"
+              alt="icon-facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../public/scripts/eventos_page.js"></script>
+  </body>
 </html>
