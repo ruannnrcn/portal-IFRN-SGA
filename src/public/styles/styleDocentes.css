@@ -1,0 +1,347 @@
+:root {
+  --cor-base: #fff;
+  --verde: #2f9e41;
+  --verde-texto: #027a00;
+  --verde-shadow-claro: #21b33515;
+  --cinza: #c0c0c0;
+  --cinza-escuro: #a0a0a0;
+  --preto-texto: #000000;
+  --fundo-preto: #000000e0;
+}
+
+* {
+  border: 0 none;
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* ICONES E LOGOS(INSTAGRAM, FACEBOOK...) */
+.material-icons {
+  font-family: "Material Icons";
+  font-size: larger;
+  padding-left: 0.5em;
+  display: flex;
+}
+
+body {
+  display: block;
+  margin: auto;
+  transition: 0.7s;
+}
+
+body.dark-mode {
+  background-color: var(--fundo-preto);
+  transition: 0.7s;
+}
+
+.dark-mode .txt p:nth-child(1) {
+  color: #000;
+  font-weight: normal;
+}
+
+.dark-mode .txt p:nth-child(2) {
+  color: var(--cinza);
+  font-weight: bold;
+}
+
+#Titulo-ifrn {
+  color: black;
+  flex-basis: 270px;
+  align-self: end;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 2px;
+}
+
+.dark-mode #Titulo-ifrn {
+  color: var(--cinza);
+}
+
+/* Botao de tema - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 21px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.butao-busca label {
+  margin-top: 5px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  box-shadow: inset 2px 5px 10px #dbdbdb;
+  transition: 0.4s;
+  border-radius: 12px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 100px;
+  left: 0.2em;
+  bottom: 0.4em;
+  background-color: rgb(133, 133, 133);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px #000000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(2em) rotate(360deg);
+}
+
+/* Flex box do titulo da pagina */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 2rem 15rem 1rem 15rem;
+  gap: 6rem;
+  border-bottom: 1px --verde-shadow-claro solid;
+  align-items: center;
+  flex-direction: row;
+}
+
+#Titulo-ifrn {
+  color: black;
+  flex-basis: 270px;
+  align-self: end;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 2px;
+}
+
+.dark-mode #Titulo-ifrn {
+  color: #e2e2e2;
+}
+
+/* botao de pesquisa */
+
+form.example input[type="text"] {
+  border-top-left-radius: 21px;
+  border-bottom-left-radius: 21px;
+  padding: 8px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
+  float: left;
+  width: 80%;
+  background: #ffffff;
+}
+
+.dark-mode form.example input[type="text"] {
+  box-shadow: 2px 5px 10px rgb(0, 0, 0);
+  background-color: #171717;
+  color: #c0c0c0;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  padding: 8px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #e2e2e2, -5px -5px 10px #f9f9f9;
+  cursor: pointer;
+}
+
+.dark-mode form.example button {
+  box-shadow: 2px 5px 10px rgb(0, 0, 0);
+  background-color: #171717;
+  color: #c0c0c0;
+}
+
+form.example button:hover {
+  background: #027a00;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* fim do botao pesquisa */
+
+/* Menu do titulo da pagina */
+nav {
+  box-shadow: 0px 6px 6px 0px #2a690029;
+  padding: 0rem 14rem 0rem 14rem;
+  border-top: #00000005 solid 1px;
+}
+
+.dark-mode nav {
+  box-shadow: 0px 6px 6px 0px #00000029;
+}
+
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  box-shadow: 0px 0px 15px 0px rgba(255, 0, 0, 0.16);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  color: #000000;
+}
+
+.menu a {
+  font-size: 12px;
+  color: #696969;
+  text-decoration: none;
+}
+
+.dark-mode .menu a {
+  color: var(--cinza);
+}
+
+.menu a:hover {
+  color: #04be01;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+/* Menu do titulo da pagina  fim*/
+
+/* inicio da estilização dos cards*/
+
+main {
+  box-shadow: 2px 2px 20px 2px #2a690029;
+  margin: 30px;
+}
+
+.dark-mode main {
+  box-shadow: 2px 5px 20px 2px #1a1919;
+}
+
+.card-deck {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 5rem;
+}
+
+.card-deck .card {
+  width: 35vh;
+  gap: 1.5rem;
+  width: 35rem;
+  transition: 0.6s;
+}
+
+.dark-mode .card {
+  transition: 0.6s;
+  background-color: #272525c9;
+  box-shadow: 0px 0px 7px var(--preto-texto);
+}
+
+.card-deck .card:hover {
+  box-shadow: 2px 5px 20px 2px #3c3c3c;
+  transition: 0.4s;
+}
+
+.dark-mode .card-deck .card:hover {
+  box-shadow: 0px 1px 20px 0px #484747;
+  transition: 0.4s;
+}
+
+.dark-mode .card-title {
+  color: var(--cinza);
+}
+
+.card-deck .card:hover {
+  box-shadow: 2px 5px 20px 2px #3c3c3c;
+  transition: 0.4s;
+}
+
+.card-text {
+  font-size: 13px;
+  color: #696969;
+  text-align: justify;
+}
+
+.btn.btn-primary {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  color: var(--cor-base);
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: var(--verde);
+  margin-left: 65px;
+}
+
+.card-body a:hover {
+  color: #000;
+  background-color: var(--verde);
+  transition: 0.4s;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: bold;
+  color: #027a00;
+}
+
+main img {
+  width: 300px;
+  height: 400px;
+}
+
+/* fim da estilização dos cards */
+
+/* footer */
+
+footer .div-footer {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2f9e41;
+  color: #ffffff;
+}
+
+footer a {
+  padding: 1.5rem;
+}
