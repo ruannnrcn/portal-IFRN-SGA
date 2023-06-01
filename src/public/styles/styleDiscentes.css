@@ -6,7 +6,7 @@
   --cinza: #c0c0c0;
   --cinza-escuro: #a0a0a0;
   --preto-texto: #000000;
-  --fundo-preto: #141414;
+  --fundo-preto: #000000e0;
 }
 
 * {
@@ -15,21 +15,21 @@
   outline: 0 none;
   padding: 0;
   font-family: "Inter", sans-serif;
+  transition: 0.4s;
 }
 
-/* ICONES E LOGOS(INSTAGRAM, FACEBOOK...) */
+body {
+  height: 100vh;
+}
+
 .material-icons {
   font-family: "Material Icons";
   font-size: larger;
   padding-left: 0.5em;
   display: flex;
 }
-body {
-  display: block;
-  margin: auto;
-}
 
-body.dark-mode {
+.dark-mode body {
   background-color: var(--fundo-preto);
 }
 .dark-mode .txt p:nth-child(1) {
@@ -121,6 +121,11 @@ header {
   flex-direction: row;
 }
 
+.dark-mode header {
+  background-color: var(--fundo-preto);
+  transition: 0.7s;
+}
+
 #Titulo-ifrn {
   color: black;
   flex-basis: 270px;
@@ -169,7 +174,7 @@ form.example button {
 }
 
 form.example button:hover {
-  background: #027a00;
+  background: #04be01;
 }
 
 form.example::after {
@@ -185,17 +190,10 @@ nav {
   padding: 0rem 14rem 0rem 14rem;
   border-top: #00000005 solid 1px;
 }
+
 .dark-mode nav {
+  background-color: var(--fundo-preto);
   box-shadow: 0px 6px 6px 0px #00000029;
-}
-.navBar {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem 1rem;
-  gap: 2rem;
-  align-items: center;
-  list-style: none;
-  box-shadow: 0px 0px 15px 0px rgba(73, 69, 69, 0.16);
 }
 
 .menu {
@@ -206,7 +204,9 @@ nav {
   align-items: center;
   list-style: none;
   color: #000000;
+  margin-bottom: 0;
 }
+
 .menu a {
   font-size: 12px;
   color: #696969;
@@ -222,36 +222,48 @@ nav {
   transition: 0.2s;
 }
 /* Menu do titulo da pagina  fim*/
-div h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  width: 100%;
-  color: #027a00;
-  font-weight: bold;
-}
+
 /* inicio da estilização dos cards*/
-.card-group {
+
+.container-turmas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4rem;
-  padding: 20px 40px;
+  padding: 2rem 5rem;
   align-items: center;
   justify-content: center;
 }
-.dark-mode .card {
-  box-shadow: 2px 5px 10px rgb(0, 0, 0);
-  background-color: #171717;
-  color: #c0c0c0;
+
+.dark-mode main {
+  background-color: var(--fundo-preto);
+  transition: 0.7s;
 }
-.card {
+
+.card-body .card {
+  width: 35vh;
+  gap: 1.5rem;
   width: 35rem;
-  box-shadow: 5px 6px 6px 0px #2a690029;
+  box-shadow: 0px 0px 7px #2a690029;
   transition: 0.6s;
 }
 
-.card:hover {
-  box-shadow: 5px 2px 20px 2px grey;
+ .card {
+  background-color: white;
+} 
+.dark-mode .card {
+  transition: 0.6s;
+  background-color: #272525c9;
+  box-shadow: 0px 0px 7px var(--preto-texto);
+}
+
+.card-body .card:hover {
+  box-shadow: 2px 5px 20px 2px #3c3c3c;
+  transition: 0.4s;
+}
+
+.dark-mode .card-body .card:hover {
+  box-shadow: 0px 1px 20px 0px #484747;
   transition: 0.4s;
 }
 
@@ -260,26 +272,40 @@ div h1 {
   color: #696969;
 }
 
+.dark-mode .card-text {
+  color: var(--cinza-escuro);
+}
+
 .card-body a {
   text-decoration: none;
-  color: #027a00;
+  color: #696969;
+}
+
+.dark-mode .card-body a {
+  color: var(--cinza-escuro);
 }
 
 .card-body a:hover {
-  color: #696969;
-  
+  color: #027a00;
   transition: 0.4s;
 }
 
 .card-title {
   font-size: 17px;
   font-weight: bold;
+  color: #027a00;
 }
 
-main h1 {
-  text-align: center;
-  padding: 16px 0px 8px 0px;
+.dark-mode .card-title {
+  color: var(--cinza);
+}
+
+h1 {
   font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+  color: #027a00;
+  font-weight: bold;
 }
 
 /* fim da estilização dos cards */
@@ -305,18 +331,17 @@ div.list-header {
   gap: 10px;
   align-items: center;
 }
-.dark-mode div.list-header {
-  color: #ffffff;
-} 
 
 div.list-description {
   text-align: center;
 }
-.dark-mode div.list-description {
-  color: var(--cinza);
-}
+
 div.list-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.imgs img {
+  width: 2.2rem;
 }
